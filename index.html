@@ -1,52 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Track My Day</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Vishnu Shinde | AI & Data Science Portfolio</title>
+    <!-- Using Tailwind to mimic WordPress CSS styles quickly -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Merriweather (Serif) and Inter (Sans) for that "Blog" look -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #374151;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Merriweather', serif;
+            color: #111827;
+        }
+
+        /* WordPress-style Block quotes */
+        blockquote {
+            border-left: 4px solid #2563eb;
+            padding-left: 1rem;
+            font-style: italic;
+            color: #4b5563;
+        }
+
+        /* Simulating WordPress "Cards" */
+        .wp-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .wp-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>📅 Track My Day</h1>
-    <p>Your personal productivity companion</p>
-  </header>
 
-  <main class="container">
-    <section class="task-section">
-      <div class="task-header">
-        <input type="text" id="taskInput" placeholder="Add new task..." />
-        <button onclick="addTask()">Add</button>
-      </div>
-      <ul id="taskList"></ul>
+<body class="antialiased">
+
+    <!-- WORDPRESS HEADER -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Site Title -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold font-serif tracking-tight text-gray-900">
+                        Saurav Shinde<span class="text-blue-600">.</span>
+                    </a>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-sm font-medium text-gray-900 hover:text-blue-600">Home</a>
+                    <a href="#about" class="text-sm font-medium text-gray-500 hover:text-blue-600">About</a>
+                    <a href="#portfolio" class="text-sm font-medium text-gray-500 hover:text-blue-600">Portfolio</a>
+                    <a href="#contact" class="text-sm font-medium text-gray-500 hover:text-blue-600">Contact</a>
+                </nav>
+                <!-- Mobile Menu Button (Visual Only) -->
+                <div class="md:hidden">
+                    <button class="text-gray-500 hover:text-gray-900">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (HOME) -->
+    <section id="home" class="bg-white pb-16 pt-20 border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <p class="text-blue-600 font-semibold tracking-wide uppercase text-sm mb-4">AI & Data Science Student</p>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                Building Intelligent Solutions for the Future.
+            </h1>
+            <p class="text-xl text-gray-500 mb-10 leading-relaxed">
+                Hi, I'm <strong>Saurav Shinde</strong>. I am a B.Tech Student at Zeal College of Engineering with
+                strong interests in Python, Data Science, and Web Technologies.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#portfolio"
+                    class="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition">View My
+                    Work</a>
+                <a href="#contact"
+                    class="bg-white text-gray-700 border border-gray-300 px-8 py-3 rounded-md font-medium hover:bg-gray-50 transition">Contact
+                    Me</a>
+            </div>
+        </div>
     </section>
 
-    <section class="graph-section">
-      <div class="graph-card">
-        <h2>Today's Progress</h2>
-        <canvas id="chart"></canvas>
-      </div>
-      <div class="graph-card">
-        <h2>History Overview</h2>
-        <canvas id="historyChart"></canvas>
-      </div>
-    </section>
-    <section class="history-filter-section">
-  <h2>📜 View Task History</h2> <br>
-  <div class="history-buttons">
-    <button onclick="showHistory('yesterday')">Yesterday</button>
-    <button onclick="showHistory('last7')">Last 7 Days</button>
-    <button onclick="showHistory('last30')">Last 30 Days</button>
-    <button onclick="showHistory('year')">This Year</button>
-  </div>
-  <div id="historyOutput"></div>
-</section>
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
 
-  </main>
+        <!-- ABOUT ME WIDGET -->
+        <section id="about" class="grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <!-- Profile Image / Gravatar Style -->
+                <div
+                    class="bg-gray-200 w-full aspect-square rounded-lg flex items-center justify-center mb-6 relative overflow-hidden">
+                    <i class="fas fa-user text-6xl text-gray-400"></i>
+                    <!-- <img src="your-photo.jpg" class="absolute inset-0 w-full h-full object-cover"> -->
+                </div>
+            </div>
+            <div class="md:col-span-2">
+                <h2 class="text-3xl font-bold mb-6">About Me</h2>
+                <div class="prose text-gray-600 mb-6">
+                    <p class="mb-4">
+                        I am currently pursuing my <strong>B.Tech in Artificial Intelligence & Data Science</strong> at
+                        Zeal College of Engineering and Research, Pune.
+                    </p>
+                    <p class="mb-4">
+                        I enjoy building projects, solving real-world problems, and continuously improving my technical
+                        skills. My focus is on bridging the gap between raw data and actionable insights using modern AI
+                        tools.
+                    </p>
+                    <blockquote>
+                        "Motivated student seeking internship opportunities to apply foundational skills in web
+                        development, data analysis, and machine learning."
+                    </blockquote>
+                </div>
 
+                <div class="grid grid-cols-2 gap-4 text-sm mt-8 border-t pt-6">
+                    <div><strong class="text-gray-900">Location:</strong> Pune, India</div>
+                    <div><strong class="text-gray-900">Email:</strong> Sshinde5930@gmail.com</div>
+                    <div><strong class="text-gray-900">College:</strong> Zeal College (ZCOER)</div>
+                    <div><strong class="text-gray-900">Year:</strong> Second Year (SY)</div>
+                </div>
+            </div>
+        </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="script.js"></script>
- 
+        <!-- SKILLS (TAG CLOUD STYLE) -->
+        <section id="skills">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Technical Skills</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Programming -->
+                <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 flex items-center"><i class="fas fa-code mr-3 text-blue-600"></i>
+                        Languages & Web</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Python (ML)</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">C / C++</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">HTML5</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">CSS3</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Tools & AI -->
+                <div class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 flex items-center"><i
+                            class="fas fa-brain mr-3 text-purple-600"></i> Data & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Power BI</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Machine Learning</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Prompt Engineering</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Pandas</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Git & GitHub</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Jupyter</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO / PROJECTS (BLOG GRID STYLE) -->
+        <section id="portfolio">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold">Recent Projects</h2>
+                    <p class="text-gray-500 mt-2">A selection of my academic and personal work.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project Post 1 -->
+                <article class="wp-card overflow-hidden flex flex-col h-full">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center border-b border-gray-100">
+                        <i class="fas fa-chart-pie text-4xl text-gray-300"></i>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-2">Data Analysis
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 hover:text-blue-600 cursor-pointer">Sales Data Dashboard</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-1">
+                            Designed an interactive dashboard using Power BI to analyze retail sales data. Visualized
+                            key metrics including monthly revenue and top-selling products to aid decision-making.
+                        </p>
+                        <a href="https://github.com/shubh593"
+                            class="text-sm font-semibold text-gray-900 hover:text-blue-600 mt-auto">Read More &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Project Post 2 -->
+                <article class="wp-card overflow-hidden flex flex-col h-full">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center border-b border-gray-100">
+                        <i class="fas fa-laptop-code text-4xl text-gray-300"></i>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-2">Web Development
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 hover:text-blue-600 cursor-pointer">Student Portfolio Website
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-1">
+                            Developed a fully responsive personal portfolio website to showcase academic achievements.
+                            Implemented modern UI/UX principles using HTML5, CSS3, and Tailwind.
+                        </p>
+                        <a href="https://github.com/shubh593"
+                            class="text-sm font-semibold text-gray-900 hover:text-blue-600 mt-auto">Read More &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS & ACHIEVEMENTS -->
+        <section class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+            <h2 class="text-2xl font-bold mb-6 text-center">Certifications & Achievements</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-certificate text-yellow-500"></i>
+                    <span>Python Basics - <strong>HackerRank</strong></span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-certificate text-yellow-500"></i>
+                    <span>SQL Intermediate - <strong>HackerRank</strong></span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-medal text-blue-500"></i>
+                    <span>Machine Learning Course - <strong>Coursera</strong></span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-trophy text-orange-500"></i>
+                    <span>Participant in College Tech Fest 2024</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM (WP FORMS STYLE) -->
+        <section id="contact" class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+            <p class="text-gray-600 mb-8">Have a project idea or just want to say hi? Feel free to contact me via email
+                or social media.</p>
+
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="mailto:Sshinde5930@gmail.com"
+                    class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition">
+                    <i class="fas fa-envelope mr-2"></i> Email Me
+                </a>
+                <a href="./Resume_Shubham_Shinde.pdf"
+                    class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 transition">
+                    <i class="fas fa-file-pdf mr-2"></i> Download Resume
+                </a>
+            </div>
+
+            <!-- Social Icons Widget -->
+            <div class="border-t border-gray-200 pt-8">
+                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Follow Me</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://www.linkedin.com/in/shubham-shinde-041237242"
+                        class="text-gray-400 hover:text-blue-600 transition text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/shubh593" class="text-gray-400 hover:text-gray-900 transition text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://leetcode.com/shubham--12"
+                        class="text-gray-400 hover:text-yellow-500 transition text-2xl">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- WORDPRESS FOOTER -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 text-sm">
+
+            <!-- Footer Widget 1 -->
+            <div>
+                <h4 class="text-lg font-serif font-bold mb-4">Shubham Shinde</h4>
+                <p class="text-gray-400 leading-relaxed">
+                    A Portfolio Website for Activity 6 (Digital Literacy & Applications). Showcasing projects in AI,
+                    Data Science, and Web Development.
+                </p>
+            </div>
+
+            <!-- Footer Widget 2 -->
+            <div>
+                <h4 class="text-lg font-serif font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                    <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                    <li><a href="#portfolio" class="text-gray-400 hover:text-white transition">Projects</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Widget 3 -->
+            <div>
+                <h4 class="text-lg font-serif font-bold mb-4">Assignment Details</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><strong>College:</strong> Zeal College of Engineering</li>
+                    <li><strong>Dept:</strong> AI & Data Science</li>
+                    <li><strong>Submission:</strong> 29/11/2025</li>
+                    <li><strong>Faculty:</strong> Prof. Arundhati Varude</li>
+                </ul>
+            </div>
+        </div>
+
+        <div
+            class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-xs">
+            &copy; 2025 Shubham Shinde. Powered by HTML & CSS (Mocking WordPress Theme).
+        </div>
+    </footer>
+
 </body>
+
 </html>
