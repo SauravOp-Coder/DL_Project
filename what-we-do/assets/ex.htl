@@ -1,0 +1,30 @@
+<!-- Pure content without wrapper when controls are hidden -->
+        <section class="chatbot-wrap bg-[linear-gradient(90deg,var(--primary-900)_0%,var(--primary-700)_100%)] min-h-[300px] md:h-[448px] bg-no-repeat bg-cover bg-center overflow-hidden relative">
+            <!-- Decorative Patterns -->
+            <div class="absolute bottom-0 right-0 pointer-events-none opacity-10">
+                <!-- Circle Pattern -->
+                <div class="absolute bottom-[-50px] right-[-50px] w-[200px] h-[200px] rounded-full border-[20px] border-white/20"></div>
+                <div class="absolute bottom-[-30px] right-[-30px] w-[150px] h-[150px] rounded-full border-[15px] border-white/20"></div>
+
+                <!-- Dots Pattern -->
+                <div class="absolute bottom-[80px] right-[200px] flex gap-4">
+                    <div class="w-2 h-2 rounded-full bg-white/20"></div>
+                    <div class="w-2 h-2 rounded-full bg-white/20"></div>
+                    <div class="w-2 h-2 rounded-full bg-white/20"></div>
+                </div>
+
+                <!-- Lines Pattern -->
+                <div class="absolute bottom-[40px] right-[150px] flex flex-col gap-3">
+                    <div class="w-[60px] h-[2px] bg-white/20"></div>
+                    <div class="w-[40px] h-[2px] bg-white/20"></div>
+                    <div class="w-[20px] h-[2px] bg-white/20"></div>
+                </div>
+            </div>
+
+            <div class="relative w-full h-full">
+                <!-- Logo Section - Absolute positioned to stick to left -->
+                <div class="client-logo-listing md:absolute left-0 top-0 w-full md:w-[55%] h-[300px] md:h-full overflow-hidden z-[1]">
+                    <div class="rotate-div right-m second py-8 md:py-14 relative transformmd: md:-rotate-[40deg] opacity-75">
+                        <div class="brands-marquee-inner">
+                            <div class="js-marquee-wrapper">
+                                <div class="js-marquee">
