@@ -11,37 +11,38 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <link rel="profile" href="LOGO.webp">
-    <link rel="shortcut icon" type="image/x-icon" href="LOGO.webp">
-    <link rel="apple-touch-icon-precomposed" href="LOGO.webp">
+    <link rel="profile" href="/LOGO.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/LOGO.png">
+    <link rel="apple-touch-icon-precomposed" href="/LOGO.png">
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-    <title>Dataspy Technologies.</title>
+    <title>Top Web, Mobile App and Custom Software Development Company</title>
 
-    <meta name="description" content="With over 2 decades of experience, we exactly know your needs in the process of building a great software product and our methodology personifies it.">
-    <meta name="keywords" content="Our Work Methodology">
+    <meta name="description" content="We are a top web,mobile app and Software development company in India providing IT technology services solutions to startups, enterprises.">
+    <meta name="keywords" content="Our Treasure Comprises Our People">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Our Work Methodology for Building Software Solutions">
-    <meta property="og:description" content="With over 2 decades of experience, we exactly know your needs in the process of building a great software product and our methodology personifies it.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Top Web, Mobile App and Custom Software Development Company">
+    <meta property="og:description" content="We are a top web,mobile app and Software development company in India providing IT technology services solutions to startups, enterprises.">
 
-    <meta property="og:url" content="https://www.dataspy.com/methodologies/">
+    <meta property="og:url" content="https://www.dataspy.com/about/">
     <meta property="og:site_name" content="DATASPY">
+    <meta property="article:modified_time" content="2025-11-27T13:18:14+00:00">
 
-    
-    <meta property="og:image:width" content="500">
-    <meta property="og:image:height" content="172">
-    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image" content="https://DATASPY-uploads.sfo3.digitaloceanspaces.com/uploads/2022/02/90258407_3961041320587862_6561688182553837568_n.png">
+    <meta property="og:image:width" content="820">
+    <meta property="og:image:height" content="312">
+    <meta property="og:image:type" content="image/png">
 
 
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Our Work Methodology for Building Software Solutions">
-    <meta name="twitter:description" content="With over 2 decades of experience, we exactly know your needs in the process of building a great software product and our methodology personifies it.">
+    <meta name="twitter:title" content="Top Web, Mobile App and Custom Software Development Company">
+    <meta name="twitter:description" content="We are a top web,mobile app and Software development company in India providing IT technology services solutions to startups, enterprises.">
 
     <link rel="preload" as="style" href="assets/css/poppins.css" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/assets/css/poppins.css/"></noscript>
@@ -1407,7 +1408,7 @@
             }
         }
 
-    /* ===== MOBILE NAV ONLY ===== */
+            /* ===== MOBILE NAV ONLY ===== */
 
 .mobile-header {
   display: none;
@@ -2091,6 +2092,51 @@
             opacity: 1
         }
 
+        /* Block ID: 218 */
+
+        .swiper-navigation-icon {
+            width: 10px !important
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: var(--primary-500)
+        }
+
+        .leaders-slider .swiper-pagination {
+            display: none !important
+        }
+
+        @media (max-width:1024px) {
+            .leaders-slider {
+                padding-top: 2.5rem
+            }
+            .leaders-slider .swiper-pagination {
+                display: flex !important;
+                position: static !important;
+                justify-content: center;
+                margin-top: 1rem
+            }
+        }
+
+        @media (max-width:767px) {
+            .swiper-pagination-bullet {
+                width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px)) !important;
+                height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px)) !important
+            }
+        }
+
+        /* Block ID: 379 */
+
+        /* Enter your CSS code here */
+
+        /* Block ID: 149 */
+
+        /* Enter your CSS code here */
+
+        /* Block ID: 149 */
+
+        /* Enter your CSS code here */
+
         /* Block ID: 320 */
 
         .jcgmt-hour,
@@ -2265,96 +2311,6 @@
             border-left: 4px solid #3b82f6;
             color: #1e40af;
         }
-
-        /* Custom CSS for Horizontal Scrolling Logo Section */
-
-/* Keyframe animation definition */
-@keyframes scroll-left {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-/* Keyframe animation definition for the 'left' direction (right-to-left scrolling) */
-@keyframes scroll-right {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-.cont {
-    /* Use 'max-width: none' to allow the child scrolling container to be wider than the viewport */
-    max-width: none; 
-}
-
-.scorri {
-    /* Required to contain the scrolling list */
-    display: flex;
-    white-space: nowrap;
-    overflow: hidden; /* Hide the duplicated content until it's positioned for the loop */
-}
-
-.tithome {
-    /* This is the element that actually moves */
-    display: inline-block;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-    /* Animation properties, using the value from the HTML attribute if available */
-    animation: scroll-left var(--animation-speed, 0s) linear infinite;
-    animation-delay: 0s; /* Start immediately */
-
-    /* Duplicate the list content to create the seamless loop effect */
-    content: attr(data-content); 
-}
-
-/* The actual list items */
-.tithome li {
-    display: inline-block;
-    padding: 0 10px; /* Space between logos */
-    height: 40px; /* Define a consistent height for the list item */
-    line-height: 40px; /* Vertically center the content */
-}
-
-.tithome li img {
-    /* Ensure images are vertically centered and maintain aspect ratio */
-    display: inline-block;
-    vertical-align: middle; 
-    max-width: 100%;
-    /* Override fixed styles with object-fit for safety, though Tailwind's object-contain is there */
-    object-fit: contain; }
-
-/* Specific scrolling direction */
-.scorri.left .tithome {
-    /* For right-to-left scrolling (ltr) */
-    animation-name: scroll-left;
-}
-
-.scorri.right .tithome {
-    /* For left-to-right scrolling (rtl) */
-    animation-name: scroll-right;
-}
-
-/* Media Query for Mobile (Optional: slow down animation on smaller screens) */
-@media (max-width: 768px) {
-    .tithome {
-        animation-duration: 8s !important;
-    }
-    .tithome li {
-        padding: 0 20px;
-    }
-    .tithome li img {
-        width: 120px !important;
-        height: 40px !important;
-    }
-}
     </style>
     <!-- Google Tag Manager -->
     <script>
@@ -2383,20 +2339,20 @@
         window.dataLayer = window.dataLayer || [];
     </script>
     <!-- Hidden page ID for JavaScript access (CRITICAL for drag and drop) -->
-    <input type="hidden" id="page-id" value="128">
+    <input type="hidden" id="page-id" value="71">
 
     <!-- Global Assets Debug Info (only in development) -->
 
-    <div  class="page-content">
+    <div class="page-content">
 
-        <!-- Pure content without wrapper when controls are hidden -->
-        <header style="height:0px;" id="desktop" class="globalNav initialized noDropdownTransition">
-            <nav  style="position: relative;top:-22px;" class="container-lg mx-auto">
+   <!-- Pure content without wrapper when controls are hidden -->
+        <header style="height:0px;" style="height:0px;" id="desktop" class="globalNav initialized noDropdownTransition">
+            <nav style="position: relative;top:-22px;" style="position: relative;top:-22px;" class="container-lg mx-auto">
                 <ul class="navRoot flex items-center justify-between">
                     <!-- Logo Part -->
                     <li class="navSection logo">
                         <a class="rootLink item-home colorize" aria-label="DATASPY LOGO" href="/" title="DATASPY">
-                <img src="LOGO.webp" class="max-w-full h-auto" alt="DATASPY" width="116" height="80">
+                <img src="/LOGO.webp" class="max-w-full h-auto" alt="DATASPY" width="116" height="80">
                 </a>
                     </li>
                     <!-- Navigation Part -->
@@ -2404,11 +2360,11 @@
                         <!-- Mobile Logo -->
                         <div class="mb-logo">
                             <a class="p-0 link-active" aria-label="DATASPY Logo" href="/" title="DATASPY">
-                    <img src="LOGO.webp" class="max-w-full h-auto" alt="DATASPY" width="32" height="32">
+                    <img src="/LOGO.webp" class="max-w-full h-auto" alt="DATASPY" width="32" height="32">
                     </a>
                         </div>
                         <!-- Main Navigation Links -->
-                        <a href="ABOUT.html" class="rootLink hasDropdown" data-dropdown="about" aria-haspopup="true" aria-expanded="false" title="About">
+                        <a href="/INDEX/ABOUT.html" class="rootLink hasDropdown" data-dropdown="about" aria-haspopup="true" aria-expanded="false" title="About">
                 <span>About</span>
                 </a>
                         <a href="/PROPER/FOCUS/FOCUS.html" class="rootLink hasDropdown" data-dropdown="focus" aria-haspopup="true" aria-expanded="false" title="Focus">
@@ -2424,15 +2380,14 @@
                 <span>Methodology</span>
                 </a>
                     
-                <a class="rootLink btn-orange sideform-open ctn-btn" onclick="Typebot.toggle()" href="/contact/contact.html"> button</a>
                         <!-- Mobile Contact Button -->
                         <button type="button" class="rootLink btn-orange sideform-open ctn-btn" onclick="Typebot.toggle()">
-                <a class="rootLink btn-orange sideform-open ctn-btn" onclick="Typebot.toggle()" href="/contact/contact.html"> button</a>
+                Contact Us
                 </button>
                     </li>
                     <!-- Contact and Theme Icons -->
                     <li class="navSection secondary flex items-center justify-end">
-                        <button style="border-radius: 0%;" type="button" class="rootLink btn-orange sideform-open" onclick="window.location.href='/contact/contact.html'" onclick="Typebot.toggle()">
+                        <button type="button" class="rootLink btn-orange sideform-open" onclick="Typebot.toggle()">
                 Contact Us <span class="fa ph-bold ph-arrow-right ml-2"></span>
                 </button>
                     </li>
@@ -2642,7 +2597,7 @@
                                             <span class="menu-icon menu-icon icon-m-ind-healthcare"></span>
                                         </div>
                                         <h3>
-                                            <a href="/industries/healthcare/" title="Healthcare">Healthcare</a>
+                                            <a href="/industries/index.html" title="Healthcare">Healthcare</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2655,7 +2610,7 @@
                                             <span class="menu-icon menu-icon icon-m-ind-logistic"></span>
                                         </div>
                                         <h3>
-                                            <a href="/industries/logistic/" title="logistic">Logistic</a>
+                                            <a href="/industries/index.html" title="logistic">Logistic</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2668,7 +2623,7 @@
                                             <span class="menu-icon menu-icon icon-m-ind-Education"></span>
                                         </div>
                                         <h3>
-                                            <a href="/industries/Education/" title="Education">Education</a>
+                                            <a href="/industries/index.html" title="Education">Education</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2681,7 +2636,7 @@
                                             <span class="menu-icon menu-icon icon-m-ind-IT & Telecom"></span>
                                         </div>
                                         <h3>
-                                            <a href="/industries/IT & Telecom/" title="IT & Telecom">IT & Telecom</a>
+                                            <a href="/industries/index.html" title="IT & Telecom">IT & Telecom</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2694,7 +2649,7 @@
                                             <span class="menu-icon menu-icon icon-m-ind-ON Demand"></span>
                                         </div>
                                         <h3>
-                                            <a href="/industries/ON Demand/" title="ON Demand">ON Demand</a>
+                                            <a href="/industries/index.html" title="ON Demand">ON Demand</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2707,7 +2662,7 @@
                                             <span class="menu-icon menu-icon icon-m-ind-Manufacturing"></span>
                                         </div>
                                         <h3>
-                                            <a href="/industries/Manufacturing/" title="Manufacturing">Manufacturing</a>
+                                            <a href="/industries/index.html" title="Manufacturing">Manufacturing</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2734,7 +2689,7 @@
                                         <h3>Discovery Workshop</h3>
                                         <p>Define functional scope of your project to plan project budget and timeline.</p>
                                     </div>
-                                    <a href="/methodology/discovery-process/" class="contactBtn" title="View More">
+                                    <a href="/methodologies/methodologies/index.html" class="contactBtn" title="View More">
                             View More
                             </a>
                                 </div>
@@ -2909,8 +2864,9 @@
   <div class="mobile-top">
     <label for="mobile-menu-toggle" class="mobile-hamburger">☰</label>
 
-
-
+    <div class="mobile-logo">
+      <img src="Logo.png" alt="Logo">
+    </div>
   </div>
 
   <nav class="mobile-nav">
@@ -2959,81 +2915,201 @@
       <input type="checkbox" id="Methodlogies-m">
       <label for="Methodolgies-m">Methodologies </label>
     </div>
-
+    <a href="/contact/" class="mobile-cta">Contact Us</a>
 
   </nav>
 </header>
-
-
         <!-- Pure content without wrapper when controls are hidden -->
-       <section class="section-space dark:bg-gray-900 dark:text-white pt-0 mt-[60px] min-[1024.25px]:mt-[90px]">
-            <div class="w-full">
-                <div class="flex items-center flex-wrap ">
+        <div class="dark:bg-gray-950 md:h-screen flex flex-col justify-start md:justify-center md:items-center section-space mt-[60px] lg:mt-[90px]">
+            <div class="cmsContainer">
+                <div class="text-center md:px-8 lg:px-20 max-w-full md:max-w-[48rem] lg:max-w-[70rem] mx-auto">
+                    <p class="mb-3 md:mb-4 text-center dark:text-gray-300 text-base sm:text-lg md:text-xl font-normal">
+                       <B>  Our Treasure Comprises Our People, Vision &amp; Values</B>
+                    </p>
 
-                    <!-- Left: Text -->
-                    <div class="max-[1023.75px]:order-2 max-[1023.75px]:w-full lg:w-2/5 xl:w-2/5 px-6 lg:px-8 pt-2 xl:px-12 max-[1023.75px]:mt-6 md:pr-8 ">
+                    <h1 class="font-extrabold tracking-tight mb-3 sm:mb-4 md:mb-6 lg:mb-[2.7rem] dark:text-white">
+                        SPY IN THE WORLD OF BUSINESS WITH AI                    </h1>
 
-                        <span class="font-normal mb-4">SPY IN THE WORLD OF BUISNESS WITH AI!</span>
+                    <p class="mb-3 md:mb-4 dark:text-gray-300 text-base sm:text-lg md:text-xl font-normal mx-auto">
+                      <B> Dataspy is not only a globally recognized IT company but also a family filled with talented experts that help global brands, enterprises, mid-size businesses or even startups with innovative solutions.</B> 
+                    </p>
+                </div>
+            </div>
+        </div>
 
-                        <h1 class="font-extrabold tracking-tighter mb-4 ">Transforming Businesses with AI-Powered Solutions</h1>
-
-
-                        <p class="mb-6">DataSpy Technologies has been empowering global businesses since 2023 with cutting-edge AI solutions, intelligent automation, and data-driven insights. We help companies uncover hidden opportunities, optimize operations, and stay ahead with smart, scalable digital innovation.
-                        </p>
-
-                        <button class="relative overflow-hidden bg-primary-500 hover:bg-primary-500 dark:bg-primary-500 dark:hover:bg-primary-500 text-white text-base font-semibold rounded-full px-5 py-3 text-center inline-flex items-center transition-colors duration-200 -tracking-[0.72px]"
-                            onclick="Typebot.toggle()">
-           <a href="/Contact/contact.html"> Get a Free AI Consultation</a>
-              <span class="ph-bold ph-arrow-right ms-2"></span>
-          </button>
-
-                        <!-- 
-         -->
+       
+        <!-- Pure content without wrapper when controls are hidden -->
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14 md:py-16 dark:bg-gray-950">
+            <div class="cmsContainer">
+                <div class="grid grid-cols-1 gap-8 sm:gap-10 lg:gap-16 lg:grid-cols-2 items-start">
+                    <!-- Who We Are Section -->
+                    <div class="text-center sm:text-left space-y-4 sm:space-y-6">
+                        <!-- Main Heading -->
+                        <h2 class="font-extrabold tracking-tight mb-4 sm:mb-5 dark:text-white">
+                            Who We Are
+                        </h2>
+                        <!-- Paragraphs -->
+                        <div class="space-y-4">
+                            <p class="leading-[1.75] dark:text-gray-300">
+                                DataSpy Technologies is more than a company—it is a community of thinkers, builders, mentors, and innovators who share a common passion for transforming the way people and businesses engage with technology. From our very beginning, we have nurtured a culture rooted in curiosity, collaboration, and continuous learning.
+                            </p>
+                            <p class="leading-[1.75] dark:text-gray-300">
+                                For us, true success is not measured by numbers alone, but by our ability to take ideas—big or small—and turn them into impactful digital realities. This belief is what drives us every day, and what we hope to be remembered for as a unified team.                            </p>
+                        </div>
                     </div>
 
-                    <!-- Right: Video -->
-                    <div class="max-[1023.75px]:order-1  max-[1023.75px]:w-full lg:w-3/5 xl:w-3/5 relative section-block">
-                        <div class="relative group w-full">
-                            <video class="section-video w-full  rounded-0 " src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2025/05/ai-video-v3.mp4" muted="" playsinline="" autoplay="" loop="" poster="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2025/05/hm-ai-video-poster-img-v1-1.webp">
-            <track src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2025/05/ai-video-v3.vtt" kind="captions" srclang="en" label="english_captions">
-          </video>
-
+                    <!-- What We Do Section -->
+                    <div class="text-center sm:text-left space-y-4 sm:space-y-6 
+                        mt-8 sm:mt-10 lg:mt-0">
+                        <!-- Main Heading -->
+                        <h2 class="font-extrabold tracking-tight mb-4 sm:mb-5 dark:text-white">
+                            What We Do
+                        </h2>
+                        <!-- Paragraphs -->
+                        <div class="space-y-4">
+                            <p class="leading-[1.75] dark:text-gray-300">
+                               At DataSpy Technologies, we blend technical expertise with real-world understanding to deliver solutions that genuinely matter. Our work spans across software development and industry-oriented corporate training, helping individuals and organizations stay ahead in a rapidly evolving digital world. Whether it is developing intelligent applications, crafting AI-powered systems, or training professionals in Python, data analytics, cloud technologies, and modern development frameworks
+                            </p>
+                            <p class="leading-[1.75] dark:text-gray-300">
+                                Our clients benefit from streamlined processes, efficient execution, and a partnership model that focuses on long-term growth rather than short-term output. With every engagement, we aim to reduce complexity, accelerate delivery, and create technology-driven solutions that bring clarity, confidence, and competitive advantage in an increasingly digital landscape.
+                            </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pure content without wrapper when controls are hidden -->
+        <section class="dark:bg-gray-900 section-space">
+            <div class="cmsContainer">
+                <!-- Heading -->
+                <div class="text-center">
+                    <h2 class="font-extrabold tracking-tight dark:text-white text-center mb-6">
+                        Belief of Every DataSpyian
+                    </h2>
+                </div>
+
+
+                <!-- Grid Container -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-6 md:mt-12">
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+
+                        <!-- Icon (class-based or image-based) -->
+                        <div class="inline-flex items-center justify-center mb-6">
+                            <!-- Render icon from class -->
+                            <span class="tech-icon icon-hire-dedicated-team text-primary-500 text-4xl sm:text-5xl dark:text-secondary-400"></span>
+                        </div>
+
+                        <!-- Title -->
+                        <h5 class="font-bold dark:text-white mb-4">
+                            Client-centric Approach
+                        </h5>
+
+                        <!-- Description -->
+                        <p class="dark:text-gray-300">
+                            For any business, customers are always at the center. Beyond settng the vision , our definition goes beyond our direct customers. We always start from where you are with your ideas and we think from YOUR end customers' perspectives,
+                            their pain areas and devise a solution that solves core problems to benefit your business.Your 
+
+
+                        </p>
+
+                    </div>
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+
+                        <!-- Icon (class-based or image-based) -->
+                        <div class="inline-flex items-center justify-center mb-6">
+                            <!-- Render icon from class -->
+                            <span class="tech-icon icon-ic-new-process-discover text-purple-500 text-4xl sm:text-5xl dark:text-secondary-400"></span>
+                        </div>
+
+                        <!-- Title -->
+                        <h5 class="font-bold dark:text-white mb-4">
+                            Effective Collaboration
+                        </h5>
+
+                        <!-- Description -->
+                        <p class="dark:text-gray-300">
+                            Communication is the Key. We tend to over-communicate at times. Although sounds overwhelming, but eventually it works wonders for our client business. When our development team collaborates with our clients sitting a thousand miles away, it's apparent
+                            that we stay in touch with platforms and mediums that allow effectiveness, transparency, and accuracy.
+
+
+                        </p>
+
+                    </div>
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+
+                        <!-- Icon (class-based or image-based) -->
+                        <div class="inline-flex items-center justify-center mb-6">
+                            <!-- Render icon from class -->
+                            <span class="tech-icon icon-ic-new-process-deliver text-blue-500 text-4xl sm:text-5xl dark:text-secondary-400"></span>
+                        </div>
+
+                        <!-- Title -->
+                        <h5 class="font-bold dark:text-white mb-4">
+                            Quality Delivered in Time
+                        </h5>
+
+                        <!-- Description -->
+                        <p class="dark:text-gray-300">
+                            With over two decades of experience in the offshore IT software development industry, we have a great set of internal frameworks with best-in-class infrastructure that enables us to deliver solutions with superior quality, at all times. All these years,
+                            we have learned how to prevent failures and replicate success. We don't just brag about quality. We define and deliver it in time.
+
+
+                        </p>
+
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Pure content without wrapper when controls are hidden -->
-    
+        <section class="dark:bg-gray-900 section-space md:px-8 max-w-full mx-auto">
+            <div class="flex flex-col md:flex-row justify-center gap-4 sm:gap-5 md:gap-6 
+                max-w-[108rem] mx-auto">
+                <!-- Left Column -->
+                <div class="w-full md:w-[22.5rem] space-y-4 md:space-y-6">
+                    <div class="block overflow-hidden 
+                        h-[200px] sm:h-[300px] md:h-[12.5rem] lg:h-[12.5rem] xl:h-[19.625rem] 2xl:h-[25.875rem] 
+                         transition-transform duration-300">
+                        <img class="object-cover h-full w-full 
+                           transition duration-300 hover:scale-105" src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2024/04/infrastructure-bg-3.webp" alt="">
+                    </div>
 
-        <!-- Pure content without wrapper when controls are hidden -->
-        <section class="dark:bg-gray-900 section-space">
-            <div class="cmsContainer text-center">
-                <h2 class="mb-10 font-extrabold tracking-tight dark:text-white">
-                    Transform Ideas into High-Performance Digital Products </h2>
-                <p class="mb-5 font-normal dark:text-gray-300">
-                   DataSpy Technologies delivers world-class web and mobile solutions designed to elevate businesses across industries. Our approach focuses on building custom digital platforms that are fast, secure, and adaptable to evolving market needs. From dynamic websites and sophisticated web applications to immersive mobile experiences, every solution is crafted with precision to ensure maximum impact and long-term scalability. </p>
-                   <br><p><b>They deliver comprehensive digital solutions that help organizations thrive in a rapidly changing landscape. Our web development capabilities enable the creation of scalable platforms, intelligent digital workflows, and rich online experiences tailored to business objectives. Each solution is meticulously crafted to ensure security, high performance, and long-term adaptability.
+                    <div class="block overflow-hidden 
+                        h-[150px] sm:h-[9.375rem] md:h-[9.375rem] lg:h-[11.625rem] xl:h-[11.625rem] 2xl:h-[16.3rem] 
+                         transition-transform duration-300">
+                        <img class="object-cover h-full w-full 
+                           transition duration-300 hover:scale-105" src="Logo.png" alt="">
+                    </div>
+                </div>
 
-Our solutions bring powerful functionality to users on the go, offering smooth performance, modern interfaces, and consistent experiences across devices and environments.</p>
-                   </b> </div>
-        </section>
+                <!-- Center Column -->
+                <div class="w-full md:w-[59.063rem] space-y-4 md:space-y-6">
+                    <div class="block overflow-hidden 
+                        h-[300px] sm:h-[23.438rem] md:h-[23.438rem] lg:h-[28.75rem] xl:h-[33.125rem] 2xl:h-[43.75rem] 
+                        transition-transform duration-300">
+                        <img class="object-cover h-full w-full 
+                           transition duration-300 hover:scale-105" src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2024/04/infrastructure-bg-2.webp" alt="">
+                    </div>
+                </div>
 
-        <!-- Pure content without wrapper when controls are hidden -->
-        <section class="">
-            <div class="cmsContainer text-center">
-                <h2 class="mb-10 font-extrabold tracking-tight dark:text-white">
-                   Advanced AI and Intelligent Automation Solutions </h2>
-                <p class="mb-5 font-normal dark:text-gray-300">
-                    DataSpy Technologies delivers sophisticated AI and machine intelligence solutions designed to elevate business performance and enable smarter decision-making. Our expertise lies in creating tailored AI systems that adapt to complex requirements, offering organizations a clear path to innovation, automation, and sustained competitive advantage. Through strategic use of intelligent models, automated workflows, and insight-driven architectures, we transform how businesses operate in a digital-first world.
-                    <br>
-                    <br> We pride ourselves on building intelligent applications that automate processes, improve efficiency, and enhance user experiences. Whether it’s developing predictive analytics models, creating data-driven platforms for actionable
-                    insights, or designing AI-powered products for smarter decision-making, Dataspy empowers startups and enterprises to stay ahead in today’s competitive, AI-driven landscape.
-                    <br>
-                    <br> With proven expertise in cutting-edge AI/ML algorithms, frameworks, and technologies, we ensure every solution is uniquely tailored to address your business challenges. Partner with DATASPY to unlock the potential of artificial
-                    intelligence and transform your vision into reality. Contact us today to discuss how we can help your business thrive in the evolving world of AI.
-                    <br>            </div>
+                <!-- Right Column -->
+                <div class="w-full md:w-[22.5rem] space-y-4 md:space-y-6">
+                    <div class="block overflow-hidden 
+                        h-[150px] sm:h-[9.375rem] md:h-[9.375rem] lg:h-[11.625rem] xl:h-[11.625rem] 2xl:h-[16.3rem] 
+                         transition-transform duration-300">
+                        <img class="object-cover h-full w-full 
+                           transition duration-300 hover:scale-105" src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2022/02/infrastructure-img-4.webp" alt="">
+                    </div>
+
+                    <div class="block overflow-hidden 
+                        h-[200px] sm:h-[300px] md:h-[12.5rem] lg:h-[12.5rem] xl:h-[19.625rem] 2xl:h-[25.875rem] 
+                         transition-transform duration-300">
+                        <img class="object-cover h-full w-full 
+                           transition duration-300 hover:scale-105" src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2022/02/infrastructure-img-5.webp" alt="">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Pure content without wrapper when controls are hidden -->
@@ -3041,27 +3117,26 @@ Our solutions bring powerful functionality to users on the go, offering smooth p
             <div class="cmsContainer">
                 <div class="max-w-6xl mx-auto text-center">
                     <p class="text-[24px] md:text-[32px] leading-[1.5] font-light max-w-3xl mx-auto px-0 sm:px-0 text-gray-900 dark:text-white">
-                        We’
-ve empowered brands to achieve remarkable growth, with many experiencing up to 90% revenue improvement in their first year with us                    </p>
+                       <b></b> We've supported companies in improving efficiency and achieving stronger results within their first year!                    </p></b>
                 </div>
                 <div class="md:grid md:grid-cols-3 gap-x-8">
                     <div class="md:col-span-1 h-full relative mt-10 p-6">
                         <div class="flex justify-center gap-1 text-7xl font-extrabold mb-5">
-                            <span class="text-secondary-500 dark:text-secondary-500 counting" data-count="300 +">30+</span>
+                            <span class="text-secondary-500 dark:text-secondary-500 counting" data-count="100">0+</span>
 
                         </div>
-                        <p class="dark:text-gray-300 text-base text-center">Satisfied Clients Across wide</p>
+                        <p class="dark:text-gray-300 text-base text-center">Satisfied Clients with Dataspy</p>
                     </div>
                     <div class="md:col-span-1 h-full relative mt-10 p-6">
                         <div class="flex justify-center gap-1 text-7xl font-extrabold mb-5">
-                            <span class="text-secondary-500 dark:text-secondary-500 counting" data-count="7000 +">50</span>
+                            <span class="text-secondary-500 dark:text-secondary-500 counting" data-count="50">0+</span>
 
                         </div>
                         <p class="dark:text-gray-300 text-base text-center">Projects Delivered Successfully</p>
                     </div>
                     <div class="md:col-span-1 h-full relative mt-10 p-6">
                         <div class="flex justify-center gap-1 text-7xl font-extrabold mb-5">
-                            <span class="text-secondary-500 dark:text-secondary-500 counting" data-count="600 +">20+</span>
+                            <span class="text-secondary-500 dark:text-secondary-500 counting" data-count="25">0+</span>
 
                         </div>
                         <p class="dark:text-gray-300 text-base text-center">Experts Under the Same Roof</p>
@@ -3069,58 +3144,95 @@ ve empowered brands to achieve remarkable growth, with many experiencing up to 9
                 </div>
             </div>
         </section>
+                    
+
+            <section class="bg-gray-50 dark:bg-gray-900 section-space md:py-20">
+            <div class="cmsContainer">
+                <div class="mx-auto">
+                    <div class="grid grid-cols-2 gap-x-12 mx-auto">
+                        <div class="col-span-2 lg:col-span-1 mb-8 md:mb-4 relative">
+                            <div class="relative md:sticky md:top-[180px]">
+                                <span class="leading-30 font-medium text-primary-500 dark:text-primary-400 block mb-2.5 uppercase">
+                            Our Core Values
+                        </span>
+                                <h2 class="dark:text-white font-extrabold tracking-tight mb-30">
+                                    Deliver Reliable &amp; Quality Software Development Services
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="col-span-2 lg:col-span-1 relative space-y-10 lg:space-y-[40px]">
+                            <div>
+                                <h5 class="font-extrabold dark:text-white mb-[15px]">
+                                    Optimum Client Satisfaction
+                                </h5>
+                                <p class="dark:text-gray-300 leading-relaxed">
+                                    It's in our DNA. Our clients are the partners behind the success we have tasted over the decades. This is the reason we keep client satisfaction at the center of our ecosystem. We are not shy of collaboration to sharpen our insights for perfect execution
+                                    of our offerings. The praise from the clients is music to our ears and we’d crave for that. It’s a hunger in us that never fades.
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="font-extrabold dark:text-white mb-[15px]">
+                                    Result-oriented Approach
+                                </h5>
+                                <p class="dark:text-gray-300 leading-relaxed">
+                                    The roots of our success are connected to our vision and execution of it. Starting from the recruitment to the quality deliverables, we keep our values intact. We hire passionate humans who have that fire burning in them. People who really want to work
+                                    with us and understand the importance of client expectations to deliver quality results.
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="font-extrabold dark:text-white mb-[15px]">
+                                    Integrity in Everything
+                                </h5>
+                                <p class="dark:text-gray-300 leading-relaxed">
+                                    Integrity is our core and is at the center of everything we do. For us, it is as good as following the law, maybe more than that. It is about delivering on our commitments, honesty and fairness in business and day-to-day living. We are a family that believes
+                                    in team work with one Mantra, that is to die with memories, not dreams. Memories with our peeps, memories with our clients.
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="font-extrabold dark:text-white mb-[15px]">
+                                    Great Place to Work
+                                </h5>
+                                <p class="dark:text-gray-300 leading-relaxed">
+                                    There are a few things that make IndiaNIC a family. We love our peeps. IndiaNIC is just not about its promises, global recognitions or testimonials. With utter respect, we embrace the diversity of thought, cultures, and of people. Nothing feels better
+                                    than getting inspired by the mentors and their success stories. Yes, IndiaNIC is compassionate for its priceless assets, the employees. Humans work here, not robots!!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
 
         <!-- Pure content without wrapper when controls are hidden -->
-        <section class="dark:bg-gray-900 section-space">
+        <section class="bg-gray-50 dark:bg-gray-900 section-space md:py-10">
             <div class="cmsContainer">
-                <div class="max-w-7xl mx-auto">
-                    <h2 class="mb-[20px] lg:mb-[40px] font-extrabold tracking-tight dark:text-white">
-                        We Simplify Software Development Process
-                    </h2>
-
-                    <div class="md:grid md:grid-cols-4 gap-x-4 ">
-                        <div class="md:col-span-1 h-full relative mt-10">
-                            <div class="overflow-hidden mb-6 md:mb-10 flex items-center relative h-12 after:hidden md:after:block after:absolute after:content-[''] after:w-[60%] after:ml-[65px] after:translate-y-0 after:border after:border-secondary-500 dark:after:border-secondary-300 after:border-dashed">
-                               <img src="add.png">
+                <div class="mx-auto">
+                    <div class="grid grid-cols-2 gap-x-12 mx-auto">
+                        <div class="col-span-2 lg:col-span-1 mb-8 md:mb-4 relative">
+                            <div class="relative md:sticky md:top-[180px]">
+                                <span class="leading-30 font-medium text-primary-500 dark:text-primary-400 block mb-2.5 uppercase">
+                            Why we’re here?
+                        </span>
+                                <h2 class="dark:text-white font-extrabold tracking-tight mb-30">
+                                    What do we want to be remembered for?
+                                </h2>
                             </div>
-                            <h5 class="font-semibold mb-4 dark:text-white">
-                                Discover
-                            </h5>
-                            <p class="dark:text-gray-300">
-                                We shape brands through exploration, applying in-depth research to challenge assumptions at every turn
-                            </p>
                         </div>
-                        <div class="md:col-span-1 h-full relative mt-10">
-                            <div class="overflow-hidden mb-6 md:mb-10 flex items-center relative h-12 after:hidden md:after:block after:absolute after:content-[''] after:w-[60%] after:ml-[65px] after:translate-y-0 after:border after:border-secondary-500 dark:after:border-secondary-300 after:border-dashed">
-                               <img src = "sub.png">                            </div>
-                            <h5 class="font-semibold mb-4 dark:text-white">
-                                Design
-                            </h5>
-                            <p class="dark:text-gray-300">
-                                Our design approach is to simplify. We embrace the joy in creating something unique that is easy for end users.
-                            </p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-10">
-                            <div class="overflow-hidden mb-6 md:mb-10 flex items-center relative h-12 after:hidden md:after:block after:absolute after:content-[''] after:w-[60%] after:ml-[65px] after:translate-y-0 after:border after:border-secondary-500 dark:after:border-secondary-300 after:border-dashed">
 
-                                <img src = "mul.png">                             </div>
-                            <h5 class="font-semibold mb-4 dark:text-white">
-                                Build
-                            </h5>
-                            <p class="dark:text-gray-300">
-                                Using modern technologies, we build with efficiency and skill, creating flexible and scalable business-driven solutions.
-                            </p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-10">
-                            <div class="overflow-hidden mb-6 md:mb-10 flex items-center relative h-12 ">
+                        <div class="col-span-2 lg:col-span-1 relative space-y-10 lg:space-y-[40px]">
+                            <div>
+                                <h5 class="font-extrabold dark:text-white mb-[15px]">
 
-                                <img src = "div.png">                             </div>
-                            <h5 class="font-semibold mb-4 dark:text-white">
-                                Deliver
-                            </h5>
-                            <p class="dark:text-gray-300">
-                                We take an iterative approach to both our work and our practice, always looking for ways to improve what we do.
-                            </p>
+                                </h5>
+                                <p class="dark:text-gray-300 leading-relaxed">
+                                    We came such a long way and so much has happened in the past two decades. We built things, met so many people, created life long friendships, learned so much and grew as a whole. Looking back, it was a bumpy ride. Sometimes the days and months seemed
+                                    endless and hopeless too. But the beautiful destination is worth the struggle of the journey! And what a journey it turned out to be!<br><br> Our definition of success changed a long
+                                    time ago. Making a difference in a few lives is a worthy goal, but helping people to achieve the things they want to achieve is really what we want to be remembered for.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -3129,391 +3241,71 @@ ve empowered brands to achieve remarkable growth, with many experiencing up to 9
 
         <!-- Pure content without wrapper when controls are hidden -->
         <section class="dark:bg-gray-900 section-space">
-            <div class="cmsContainer">
-                <h2 class="text-center font-extrabold tracking-tight dark:text-white mb-6 sm:mb-8 lg:mb-16">
-                    AI-Driven Case Studies
-                </h2>
+            <h2 class="text-center dark:text-white font-extrabold tracking-tight mb-[3rem]">
+                Teamwork is the only way we work
+            </h2>
 
-                <div class="relative rounded-lg overflow-hidden mb-4 sm:mb-8 lg:mb-10 group cursor-pointer">
-                    <div class="w-full h-[300px] sm:h-[500px] lg:h-[600px] overflow-hidden">
-                        <img src="case.webp" alt=" How Data-Driven Decisions Can Reduce Business Costs" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
-                    </div>
 
-                    <!-- Content Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent">
-                        <div class="absolute bottom-0 md:top-0 p-4 sm:p-6 lg:p-[60px] max-w-full lg:max-w-[80%] flex flex-col">
-                            <p class="text-white uppercase mb-3 sm:mb-4 lg:mb-[20px] text-[18px] md:text-sm font-semibold tracking-[2px] sm:tracking-[3px]">
-                               How Data-Driven Decisions Can Reduce Business Costs
-                            </p>
 
-                            <h3 class="hidden md:block text-white font-semibold tracking-tight lg:tracking-[-1.3px] !leading-[1.5] text-left mb-4 sm:mb-6 lg:mb-[20px] pr-4 sm:pr-8 lg:pr-[20%]">
-                                Data helps businesses clearly see where money is being spent without real value. This visibility allows management to cut unnecessary costs without affecting productivity                            </h3>
-
-                            <a href="/cases/case-study-data-driven-costs.html" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-primary-500 hover:bg-primary-500 text-white rounded-full transition-colors duration-300 w-fit font-semibold "
-                                aria-label=" How Data-Driven Decisions Can Reduce Business Costs">
-                        View case study
-                    </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative rounded-lg overflow-hidden mb-4 sm:mb-8 lg:mb-10 group cursor-pointer">
-                    <div class="w-full h-[300px] sm:h-[500px] lg:h-[600px] overflow-hidden">
-                        <img src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2024/10/ai-cs-banner-2.jpg" alt="AI Real Estate Case Study" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
-                    </div>
-
-                    <!-- Content Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent">
-                        <div class="absolute bottom-0 md:top-0 p-4 sm:p-6 lg:p-[60px] max-w-full lg:max-w-[80%] flex flex-col">
-                            <p class="text-white uppercase mb-3 sm:mb-4 lg:mb-[20px] text-[18px] md:text-sm font-semibold tracking-[2px] sm:tracking-[3px]">
-                               Automating Decision-Making with Intelligent Data Systems
-                            </p>
-
-                            <h3 class="hidden md:block text-white font-semibold tracking-tight lg:tracking-[-1.3px] !leading-[1.5] text-left mb-4 sm:mb-6 lg:mb-[20px] pr-4 sm:pr-8 lg:pr-[20%]">
-                                Automating decision-making with intelligent data systems enables businesses to act faster and more accurately by using real-time insights instead of manual judgment.                            </h3>
-
-                            <a href="/cases/case-study-automated-decision-making.html" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-primary-500 hover:bg-primary-500 text-white rounded-full transition-colors duration-300 w-fit font-semibold "
-                                aria-label="Automating Decision-Making with Intelligent Data Systems">
-                        View case study
-                    </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative rounded-lg overflow-hidden mb-4 sm:mb-8 lg:mb-10 group cursor-pointer">
-                    <div class="w-full h-[300px] sm:h-[500px] lg:h-[600px] overflow-hidden">
-                        <img src="cases/case.png" alt="AI Shopping Experience Case Study" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
-                    </div>
-
-                    <!-- Content Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent">
-                        <div class="absolute bottom-0 md:top-0 p-4 sm:p-6 lg:p-[60px] max-w-full lg:max-w-[80%] flex flex-col">
-                            <p class="text-white uppercase mb-3 sm:mb-4 lg:mb-[20px] text-[18px] md:text-sm font-semibold tracking-[2px] sm:tracking-[3px]">
-                                Improving Online Shopping Experiences through AI
-                            </p>
-
-                            <h3 class ="hidden md:block text-white font-semibold tracking-tight lg:tracking-[-1.3px] !leading-[1.5] text-left mb-4 sm:mb-6 lg:mb-[20px] pr-4 sm:pr-8 lg:pr-[20%]">
-                                Redefining E-Commerce with AI: Smarter, Faster, and More Personalized Shopping for Every Customer.
-                            </h3>
-
-                            <a href="/cases/case-study-data-driven-costs.html" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-primary-500 hover:bg-primary-500 text-white rounded-full transition-colors duration-300 w-fit font-semibold "
-                                aria-label="Improving Online Shopping Experiences through AI">
-                        View case study
-                    </a>
-                        </div>
-                    </div>
-                </div>
-
-            
-        </section>
-
-        <!-- Pure content without wrapper when controls are hidden -->
-        <section class="dark:bg-gray-900 section-space">
-            <div class="cmsContainer">
-                <div class="max-w-7xl mx-auto text-center">
-                    <div class="flex flex-col justify-center">
-                        <h2 class="block text-center font-light tracking-[-0.02em] dark:text-white">Driving Intelligent Outcomes</h2>
-                    </div>
-                    <div class="md:grid md:grid-cols-5 gap-x-4 ">
-                        <div class="md:col-span-1 h-full relative mt-[40px] md:mt-[60px]">
-                            <div class="text-4xl md:text-[64px] leading-[1.25] tracking-[-2px] font-extrabold mb-5 text-secondary-500 dark:text-secondary-500">
-                                82%
-                            </div>
-                            <p class="dark:text-gray-300">Automation-Driven Decision Adoption</p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-[40px] md:mt-[60px]">
-                            <div class="text-4xl md:text-[64px] leading-[1.25] tracking-[-2px] font-extrabold mb-5 text-secondary-500 dark:text-secondary-500">
-                                92%
-                            </div>
-                            <p class="dark:text-gray-300">On-Time Project Delivery</p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-[40px] md:mt-[60px]">
-                            <div class="text-4xl md:text-[64px] leading-[1.25] tracking-[-2px] font-extrabold mb-5 text-secondary-500 dark:text-secondary-500">
-                                60+
-                            </div>
-                            <p class="dark:text-gray-300">Industry Innovations</p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-[40px] md:mt-[60px]">
-                            <div class="text-4xl md:text-[64px] leading-[1.25] tracking-[-2px] font-extrabold mb-5 text-secondary-500 dark:text-secondary-500">
-                                95%
-                            </div>
-                            <p class="dark:text-gray-300">Client Cost Savings</p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-[40px] md:mt-[60px]">
-                            <div class="text-4xl md:text-[64px] leading-[1.25] tracking-[-2px] font-extrabold mb-5 text-secondary-500 dark:text-secondary-500">
-                                100+
-                            </div>
-                            <p class="dark:text-gray-300">Client Retention Rate</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex justify-center items-center mt-[1.875rem]">
+                <a href="/Contact/contact.html" class="relative overflow-hidden bg-primary-500 hover:bg-primary-500 dark:bg-primary-500 dark:hover:bg-primary-500 text-white text-base font-semibold rounded-full px-5 py-3 text-center inline-flex items-center transition-colors duration-200 shadow-sm shadow-primary-600/20 dark:shadow-primary-500/20 tracking-[-0.72px]"
+                    data-te-ripple-init="" data-te-ripple-color="light">
+        Want to know more?
+      </a>
             </div>
         </section>
 
         <!-- Pure content without wrapper when controls are hidden -->
-        
-        <!-- Pure content without wrapper when controls are hidden -->
-        <div class="section-space dark:bg-gray-950">
-            <div class="cmsContainer">
-                <div class="flex items-center flex-col lg:flex-row">
-                    <div class="w-full lg:w-[42%] py-4 md:py-10 order-2 lg:order-1">
-                        <div class="flex flex-col justify-center">
-                            <div class="mb-2 dark:text-gray-300 md:block">
-                                Outsourcing demands trust. We deliver it with
-                            </div>
-                            <h2 class="font-extrabold tracking-tight mb-3 dark:text-white">
-                                100% Guarantee.
-                            </h2>
-                            <p class="dark:text-gray-300">
-                                Managing remote team while outsourcing requires a capable and experienced leadership. Our more than two decades of experience guarantees successful project delivery every single time.
-                                <br><br> 
-                            </p>
-                            <div class="mt-6">
-                                <a href="/Contact/contact.html" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-base font-medium bg-primary-500 hover:bg-primary-500 text-white rounded-full transition-colors duration-300 w-fit">
-                                        Reach Us 
-                                        <span class="fas fa-arrow-right ml-2 text-xl"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full lg:w-[58%] order-1 lg:order-2">
-                        <img class="max-w-full 2xl:max-w-[900px]" width="1001" height="639" src="LOGO.webp" alt="100% Guarantee.">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Pure content without wrapper when controls are hidden -->
-        <section class="section-space dark:bg-gray-900 overflow-hidden">
-
-            <p class="text-sm font-semibold uppercase mb-2 text-center"></p>
-            <h2 class="font-extrabold tracking-tight text-center dark:text-white mb-8 lg:mb-12">Words from clients</h2>
-
-            <div class="relative">
-                <!-- Swiper -->
-                <div class="swiper testimonialSwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide max-w-[360px] md:max-w-[1100px] mx-auto">
-                            <div class="bg-white overflow-hidden lg:mx-4 dark:bg-gray-800 rounded-2xl shadow-lg relative border-2 border-gray h-full">
-                                <!-- Image Container -->
-                                <div class="relative min-h-[240px] md:min-h-[380px] w-full">
-                                    <div class="sm:block hidden absolute w-[600px] h-full right-[-20px] top-1/2 -translate-y-1/2 z-[1] bg-gradient-to-r from-white from-[17.01%] to-white/0 to-[100%]"></div>
-                                    <img src="WhatsApp Image 2026-01-07 at 2.23.55 PM (1).jpeg" alt="CYBAGE" class="ml-auto h-full "  width="470" height="382">
-                                </div>
-
-                                <!-- Content Overlay -->
-                                <div class="md:absolute min-h-[250px] inset-0 z-20 md:p-8 p-4 flex flex-col gap-5 md:justify-between">
-                                    <!-- Quote -->
-                                    <div>
-                                        <span class="text-primary-500 text-4xl mb-4 block">
-                                        <i class="ph-fill ph-quotes"></i>
-                                    </span>
-                                        <p class="text-base md:text-[18px] xl:text-2xl md:font-semibold max-w-lg md:max-w-[50%] xl:max-w-lg">
-DataSpy Technologies is a growing corporate training provider focused on practical Python and development skills, known for hands-on sessions and industry-aligned curriculum.                                        </p>
-                                    </div>
-
-                                    <!-- Author Info & Play Button -->
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h5 class="font-bold">CYBAGE</h5>
-                                            <p class="text-base md:text-lg tracking-tight">Prop.Cybage</p>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide max-w-[360px] md:max-w-[1100px] mx-auto">
-                            <div class="bg-white overflow-hidden lg:mx-4 dark:bg-gray-800 rounded-2xl shadow-lg relative border-2 border-gray h-full">
-                                <!-- Image Container -->
-                                <div class="relative min-h-[240px] md:min-h-[380px] w-full">
-                                    <div class="sm:block hidden absolute w-[600px] h-full right-[-20px] top-1/2 -translate-y-1/2 z-[1] bg-gradient-to-r from-white from-[17.01%] to-white/0 to-[100%]"></div>
-                                    <img src="WhatsApp Image 2026-01-07 at 2.24.02 PM (1).jpeg" alt="Bansal Group" class="ml-auto h-full " width="470" height="382">
-                                </div>
-
-                                <!-- Content Overlay -->
-                                <div class="md:absolute min-h-[250px] inset-0 z-20 md:p-8 p-4 flex flex-col gap-5 md:justify-between">
-                                    <!-- Quote -->
-                                    <div>
-                                        <span class="text-primary-500 text-4xl mb-4 block">
-                                        <i class="ph-fill ph-quotes"></i>
-                                    </span>
-                                        <p class="text-base md:text-[18px] xl:text-2xl md:font-semibold max-w-lg md:max-w-[50%] xl:max-w-lg">
-                                            DataSpy Technologies is a practical, industry-focused training provider that emphasizes hands-on learning in Python and related technologies, helping learners build job-ready skills.                                        </p>
-                                    </div>
-
-                                    <!-- Author Info & Play Button -->
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h5 class="font-bold">Bansal Group</h5>
-                                            <p class="text-base md:text-lg tracking-tight">WeLearn Educational</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide max-w-[360px] md:max-w-[1100px] mx-auto">
-                            <div class="bg-white overflow-hidden lg:mx-4 dark:bg-gray-800 rounded-2xl shadow-lg relative border-2 border-gray h-full">
-                                <!-- Image Container -->
-                                <div class="relative min-h-[240px] md:min-h-[380px] w-full">
-                                    <div class="sm:block hidden absolute w-[600px] h-full right-[-20px] top-1/2 -translate-y-1/2 z-[1] bg-gradient-to-r from-white from-[17.01%] to-white/0 to-[100%]"></div>
-                                    <img src="WhatsApp Image 2026-01-07 at 2.24.05 PM (1).jpeg" alt="Kathleen O Martinez" class="ml-auto h-full" width="470" height="382">
-                                </div>
-
-                                <!-- Content Overlay -->
-                                <div class="md:absolute min-h-[250px] inset-0 z-20 md:p-8 p-4 flex flex-col gap-5 md:justify-between">
-                                    <!-- Quote -->
-                                    <div>
-                                        <span class="text-primary-500 text-4xl mb-4 block">
-                                        <i class="ph-fill ph-quotes"></i>
-                                    </span>
-                                        <p class="text-base md:text-[18px] xl:text-2xl md:font-semibold max-w-lg md:max-w-[50%] xl:max-w-lg">
-                                            DataSpy Technologies is a practical, career-oriented tech training provider focused on Python and real-world projects, appreciated for hands-on learning and job readiness.                                        </p>
-                                    </div>
-
-                                    <!-- Author Info & Play Button -->
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h5 class="font-bold">CIVIS</h5>
-                                            <p class="text-base md:text-lg tracking-tight">Founder</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide max-w-[360px] md:max-w-[1100px] mx-auto">
-                            <div class="bg-white overflow-hidden lg:mx-4 dark:bg-gray-800 rounded-2xl shadow-lg relative border-2 border-gray h-full">
-                                <!-- Image Container -->
-                                <div class="relative min-h-[240px] md:min-h-[380px] w-full">
-                                    <div class="sm:block hidden absolute w-[600px] h-full right-[-20px] top-1/2 -translate-y-1/2 z-[1] bg-gradient-to-r from-white from-[17.01%] to-white/0 to-[100%]"></div>
-                                    <img src="WhatsApp Image 2026-01-07 at 2.23.56 PM.jpeg" alt="James Currie" class="ml-auto h-full " width="470" height="382">
-                                </div>
-
-                                <!-- Content Overlay -->
-                                <div class="md:absolute min-h-[250px] inset-0 z-20 md:p-8 p-4 flex flex-col gap-5 md:justify-between">
-                                    <!-- Quote -->
-                                    <div>
-                                        <span class="text-primary-500 text-4xl mb-4 block">
-                                        <i class="ph-fill ph-quotes"></i>
-                                    </span>
-                                        <p class="text-base md:text-[18px] xl:text-2xl md:font-semibold max-w-lg md:max-w-[50%] xl:max-w-lg">
-                                            I liked their attention to the detail and communication skills.
-                                        </p>
-                                    </div>
-
-                                    <!-- Author Info & Play Button -->
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h5 class="font-bold">EATON</h5>
-                                            <p class="text-base md:text-lg tracking-tight">EXPERT & ANALYZER</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide max-w-[360px] md:max-w-[1100px] mx-auto">
-                            <div class="bg-white overflow-hidden lg:mx-4 dark:bg-gray-800 rounded-2xl shadow-lg relative border-2 border-gray h-full">
-                                <!-- Image Container -->
-                                <div class="relative min-h-[240px] md:min-h-[380px] w-full">
-                                    <div class="sm:block hidden absolute w-[600px] h-full right-[-20px] top-1/2 -translate-y-1/2 z-[1] bg-gradient-to-r from-white from-[17.01%] to-white/0 to-[100%]"></div>
-                                    <img src="WhatsApp Image 2026-01-07 at 2.24.04 PM (2).jpeg" alt="HCL TECH" class="ml-auto h-full " width="470" height="382">
-                                </div>
-
-                                <!-- Content Overlay -->
-                                <div class="md:absolute min-h-[250px] inset-0 z-20 md:p-8 p-4 flex flex-col gap-5 md:justify-between">
-                                    <!-- Quote -->
-                                    <div>
-                                        <span class="text-primary-500 text-4xl mb-4 block">
-                                        <i class="ph-fill ph-quotes"></i>
-                                    </span>
-                                        <p class="text-base md:text-[18px] xl:text-2xl md:font-semibold max-w-lg md:max-w-[50%] xl:max-w-lg">
-                                        DATASPY TECHNOLOGIES comes up with great ideas that we implemented, which helped my business and customers a great deal.
-                                        </p>
-                                    </div>
-                                    <!-- Author Info & Play Button -->
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h5 class="font-bold">HCL TECH</h5>
-                                            <p class="text-base md:text-lg tracking-tight">Founder, HCL tech</p>
-                                        </div>
-
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       <div style="text-align:center; margin-top:30px;">
-  <a href="more-reviews.html"
-     style="
-       display:inline-block;
-       padding:12px 28px;
-       font-size:16px;
-       font-weight:600;
-       color:#ffffff;
-       background-color:#c11616;
-       border-radius:6px;
-       text-decoration:none;
-       transition:all 0.3s ease;
-     "
-     onmouseover="this.style.backgroundColor='#f75757'"
-     onmouseout="this.style.backgroundColor='#c11616'"
-  >
-    View More Reviews
-  </a>
-</div>
-        </section>
-
-        <!-- Pure content without wrapper when controls are hidden -->
-        <section class="section-space dark:bg-gray-900 pb-5">
-            <div class="cmsContainer">
-                <div class="text-center">
-                    <span class="block mb-4 dark:text-gray-300 font-semibold block">Accolades</span>
-                    <h2 class="font-extrabold tracking-tight mb-4 dark:text-white">
-                        Feathers in our cap
-                    </h2>
-                </div>
-                <div class="mx-auto px-2.5 mt-[30px] lg:mt-[50px]">
-                    <div class="flex flex-wrap justify-center items-center gap-y-6 sm:gap-y-8 md:gap-y-12">
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 1.25.11 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Best Brand" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 1.25.12 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Top B2B Companies Global 2018" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 1.25.13 PM (1).jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Clutch Global 2019" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.24.03 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Clutch Global 2020" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 1.25.14 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="D&amp;B Bradstreet" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.23.55 PM (1).jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Amazone Web Services" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.23.55 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Shopify Plus" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.23.56 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Nasscom" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.24.04 PM (2).jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Magento Bronze" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.24.02 PM (1).jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Gesia" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.24.03 PM (1).jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="ISO Certified" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.24.06 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="GoodFirms" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.24.02 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Clutch Review" loading="lazy">
-                        </div>
+           </div>
+                
+                    <div class="col-span-5 lg:col-span-2">
+                        <ul class="flex gap-6 flex-wrap justify-start lg:justify-end">
+                            <li class="social-nav">
+                                <a aria-label="Linkedin" class=" dark:text-gray-300 text-lg hover:text-primary-500 dark:hover:text-primary-300 translate-x-0" rel="noopener" target="_blank" title="Linkedin" href="https://www.linkedin.com/company/indianic">
+                            <span class="icon-linkedin text-color text-link-hover"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        </a>
+                            </li>
+                            <li class="social-nav">
+                                <a aria-label="Instagram" class=" dark:text-gray-300 text-lg hover:text-primary-500 dark:hover:text-primary-300 translate-x-0" rel="noopener" target="_blank" title="Instagram" href="https://www.instagram.com/indianic/">
+                            <span class="icon-instagram text-color text-link-hover"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        </a>
+                            </li>
+                            <li class="social-nav">
+                                <a aria-label="YouTube" class=" dark:text-gray-300 text-lg hover:text-primary-500 dark:hover:text-primary-300 translate-x-0" rel="noopener" target="_blank" title="YouTube" href="https://www.youtube.com/user/indianicinfotech">
+                            <span class="icon-youtube text-color text-link-hover"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        </a>
+                            </li>
+                            <li class="social-nav">
+                                <a aria-label="Twitter" class=" dark:text-gray-300 text-lg hover:text-primary-500 dark:hover:text-primary-300 translate-x-0" rel="noopener" target="_blank" title="Twitter" href="https://twitter.com/indianic">
+                            <span class="icon-twitter text-color text-link-hover"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        </a>
+                            </li>
+                            <li class="social-nav">
+                                <a aria-label="Facebook" class=" dark:text-gray-300 text-lg hover:text-primary-500 dark:hover:text-primary-300 translate-x-0" rel="noopener" target="_blank" title="Facebook" href="https://www.facebook.com/indianicinfotechlimited">
+                            <span class="icon-facebook text-color text-link-hover"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        </a>
+                            </li>
+                            <li class="social-nav">
+                                <a aria-label="Dribbble" class=" dark:text-gray-300 text-lg hover:text-primary-500 dark:hover:text-primary-300 translate-x-0" rel="noopener" target="_blank" title="Dribbble" href="https://dribbble.com/indianic">
+                            <span class="icon-dribble text-color text-link-hover"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        </a>
+                            </li>
+                            <li class="social-nav">
+                                <a aria-label="Medium" class=" dark:text-gray-300 text-lg hover:text-primary-500 dark:hover:text-primary-300 translate-x-0" rel="noopener" target="_blank" title="Medium" href="https://medium.com/indianic">
+                            <span class="icon-medium text-color text-link-hover"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        </a>
+                            </li>
+                            <li class="social-nav">
+                                <a aria-label="Blog" class=" dark:text-gray-300 text-lg hover:text-primary-500 dark:hover:text-primary-300 translate-x-0" rel="noopener" target="_blank" title="Blog" href="https://blog.indianic.com/">
+                            <span class="icon-blog text-color text-link-hover"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                        </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
+
 <div style="
   background-color:#fdecec;
   padding:40px 20px;
@@ -3624,7 +3416,7 @@ DataSpy Technologies is a growing corporate training provider focused on practic
     <!-- Brand & Contact -->
     <div style="flex:1; min-width:260px;">
       <a href="/" aria-label="Dataspy">
-        <img src="LOGO.webp" alt="Dataspy Logo" width="120" style="margin-bottom:16px;">
+        <img src="/LOGO.webp" alt="Dataspy Logo" width="120" style="margin-bottom:16px;">
       </a>
 
       <p style="font-size:14px; color:#6b7280; margin-bottom:6px;">
@@ -3780,7 +3572,6 @@ DataSpy Technologies is a growing corporate training provider focused on practic
 
 </footer>
 
-
     <!-- Edit Drawer removed - now handled by EditDrawerComponent -->
 
     <!-- Merged JavaScript Assets (Global assets prioritized, no duplicates) -->
@@ -3829,11 +3620,11 @@ DataSpy Technologies is a growing corporate training provider focused on practic
             });
         });
 
-        /* Block Type: 1289 - Added once for all instances */
+        /* Block Type: 561 - Added once for all instances */
         /* Benefits: Prevents duplicate JS execution, better performance, proper cleanup */
         (function() {
             // Block JavaScript with isolated scope
-            const blockType = '1289';
+            const blockType = '561';
 
             // Clear any existing event listeners for this block type
             if (window.blockCleanupFunctions && window.blockCleanupFunctions[blockType]) {
@@ -4195,16 +3986,7 @@ DataSpy Technologies is a growing corporate training provider focused on practic
                     });
                 });
                 //============= End of Email Modal Functionality
-                
-                //============= Start of Helper function to store theme preference
-                function setToken(key, value) {
-                    try {
-                        localStorage.setItem(key, value);
-                    } catch (e) {
-                        console.warn('Failed to set token:', e);
-                    }
-                }
-                //============= End of Helper function to store theme preference
+
 
                 //============= Start of Set light theme
                 function setThemeWhite() {
@@ -4232,11 +4014,544 @@ DataSpy Technologies is a growing corporate training provider focused on practic
             }
         })();
 
-        /* Block Type: 6043 - Added once for all instances */
+        /* Block Type: 9380 - Added once for all instances */
         /* Benefits: Prevents duplicate JS execution, better performance, proper cleanup */
         (function() {
             // Block JavaScript with isolated scope
-            const blockType = '6043';
+            const blockType = '9380';
+
+            // Clear any existing event listeners for this block type
+            if (window.blockCleanupFunctions && window.blockCleanupFunctions[blockType]) {
+                window.blockCleanupFunctions[blockType]();
+            }
+
+            // Initialize cleanup functions registry
+            if (!window.blockCleanupFunctions) {
+                window.blockCleanupFunctions = {};
+            }
+
+            // Helper function to add event listeners safely
+            const blockEventListeners = [];
+
+            function addBlockEventListener(selector, event, handler) {
+                const elements = document.querySelectorAll(selector);
+                elements.forEach(element => {
+                    element.addEventListener(event, handler);
+                    blockEventListeners.push({
+                        element,
+                        event,
+                        handler
+                    });
+                });
+            }
+
+            // Store cleanup function for this block type
+            window.blockCleanupFunctions[blockType] = function() {
+                blockEventListeners.forEach(({
+                    element,
+                    event,
+                    handler
+                }) => {
+                    element.removeEventListener(event, handler);
+                });
+                blockEventListeners.length = 0; // Clear the array
+            };
+
+            // User's block JavaScript code
+            // Usage: Use addBlockEventListener(selector, event, handler) for safe event handling
+            // Example: addBlockEventListener('.my-button', 'click', function() { ... });
+            try {
+                document.addEventListener("DOMContentLoaded", (function() {
+                    document.querySelectorAll("[data-video-player]").forEach((function(e) {
+                        const t = e.getAttribute("data-video-id"),
+                            n = e.getAttribute("data-floating"),
+                            o = "true" === n || "1" === n || "yes" === n,
+                            i = document.getElementById(`myVideo_${t}`),
+                            l = document.getElementById(`playPauseBtn_${t}`),
+                            s = document.getElementById(`playIcon_${t}`),
+                            d = document.getElementById(`pauseIcon_${t}`),
+                            c = document.getElementById(`fullscreenBtn_${t}`),
+                            r = document.getElementById(`fullscreenIcon_${t}`),
+                            a = document.getElementById(`exitFullscreenIcon_${t}`),
+                            u = document.getElementById(`closeButton_${t}`),
+                            m = document.getElementById(`progressBar_${t}`),
+                            g = document.getElementById(`progressContainer_${t}`);
+                        let p = !1,
+                            f = !1,
+                            E = null,
+                            v = null;
+                        if (i) {
+                            if (console.log("Video player initialized for ID:", t), console.log("Floating enabled:", o, "(data-floating value:", n + ")"), i.addEventListener("loadeddata", (function() {
+                                    console.log("Video loaded successfully")
+                                })), i.addEventListener("error", (function(e) {
+                                    console.error("Video error:", e)
+                                })), l.addEventListener("click", (function(e) {
+                                    e.stopPropagation(), h()
+                                })), i.addEventListener("click", (function() {
+                                    h()
+                                })), e.addEventListener("mouseenter", (function() {
+                                    i.paused && l.classList.remove("opacity-0")
+                                })), c.addEventListener("click", (function(e) {
+                                    e.stopPropagation(), p || function() {
+                                        if (p) return void console.log("Fullscreen disabled in floating mode");
+                                        document.fullscreenElement ? document.exitFullscreen ? document.exitFullscreen() : document.webkitExitFullscreen ? document.webkitExitFullscreen() : document.msExitFullscreen && document.msExitFullscreen() : i.requestFullscreen ? i.requestFullscreen() : i.webkitRequestFullscreen ? i.webkitRequestFullscreen() : i.msRequestFullscreen && i.msRequestFullscreen()
+                                    }()
+                                })), document.addEventListener("fullscreenchange", w), document.addEventListener("webkitfullscreenchange", w), i.addEventListener("fullscreenchange", (function() {
+                                    p && document.fullscreenElement && document.exitFullscreen && document.exitFullscreen()
+                                })), m && (i.addEventListener("timeupdate", (function() {
+                                    const e = i.currentTime / i.duration * 100;
+                                    m.style.width = e + "%"
+                                })), g.addEventListener("click", (function(e) {
+                                    const t = g.getBoundingClientRect(),
+                                        n = (e.clientX - t.left) / t.width;
+                                    i.currentTime = n * i.duration
+                                }))), o) {
+                                function L() {
+                                    E = e.getBoundingClientRect().top + window.scrollY, console.log("✅ Original position stored:", E, "px from top")
+                                }
+
+                                function y() {
+                                    p = !1, e.style.cssText = "", c && (c.style.display = ""), u.classList.add("hidden"), console.log("✅ Video stopped floating")
+                                }
+                                console.log("Floating enabled for video:", t), setTimeout(L, 100), window.addEventListener("load", L), window.addEventListener("scroll", (function() {
+                                    v && clearTimeout(v), v = setTimeout((() => {
+                                        ! function() {
+                                            if (i.paused) return;
+                                            const t = e.getBoundingClientRect(),
+                                                n = window.scrollY || window.pageYOffset || document.documentElement.scrollTop,
+                                                o = t.bottom < 0,
+                                                l = E && n < E + 100;
+                                            !1 === i.paused && n > 100 && console.log("📍 Scroll Debug:", {
+                                                videoPlaying: !i.paused,
+                                                isFloating: p,
+                                                videoIsOutOfView: o,
+                                                rectBottom: t.bottom,
+                                                scrollY: n,
+                                                originalPosition: E,
+                                                backToOriginalPosition: l
+                                            });
+                                            p || !o || i.paused ? p && l && (console.log("⬇️ Stopping floating mode"), y()) : (console.log("🚀 Starting floating mode!"), function() {
+                                                document.fullscreenElement && (document.exitFullscreen ? document.exitFullscreen() : document.webkitExitFullscreen && document.webkitExitFullscreen());
+                                                p = !0, f = !0, e.style.cssText = "\n                    position: fixed !important;\n                    bottom: 20px !important;\n                    right: 20px !important;\n                    width: 360px !important;\n                    height: 202px !important;\n                    z-index: 999999 !important;\n                    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5) !important;\n                    border-radius: 12px !important;\n                    overflow: hidden !important;\n                    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;\n                    transform: scale(1) !important;\n                ", c && (c.style.display = "none");
+                                                u.classList.remove("hidden"), console.log("✅ Video started floating (360x202)")
+                                            }())
+                                        }()
+                                    }), 50)
+                                })), u.addEventListener("click", (function(e) {
+                                    e.stopPropagation(), i.pause(), s.classList.remove("hidden"), d.classList.add("hidden"), l.classList.remove("opacity-0"), y(), console.log("Floating video closed")
+                                })), i.addEventListener("pause", (function() {
+                                    p && y()
+                                })), i.addEventListener("ended", (function() {
+                                    s.classList.remove("hidden"), d.classList.add("hidden"), l.classList.remove("opacity-0"), p && y()
+                                }))
+                            }
+                            window.addEventListener("resize", (function() {
+                                p && console.log("Window resized while floating")
+                            }))
+                        } else console.error("Video element not found for ID:", t);
+
+                        function h() {
+                            i.paused ? i.play().then((() => {
+                                console.log("Video started playing"), s.classList.add("hidden"), d.classList.remove("hidden"), l.classList.add("opacity-0")
+                            })).catch((e => {
+                                console.error("Error playing video:", e), alert("Unable to play video. Please check your browser settings.")
+                            })) : (i.pause(), console.log("Video paused"), s.classList.remove("hidden"), d.classList.add("hidden"), l.classList.remove("opacity-0"))
+                        }
+
+                        function w() {
+                            document.fullscreenElement ? (r.classList.add("hidden"), a.classList.remove("hidden")) : (r.classList.remove("hidden"), a.classList.add("hidden"))
+                        }
+                    }))
+                }));
+            } catch (error) {
+                console.error('Block JavaScript Error (Type: ' + blockType + '):', error);
+            }
+        })();
+
+        /* Block Type: 9372 - Added once for all instances */
+        /* Benefits: Prevents duplicate JS execution, better performance, proper cleanup */
+        (function() {
+            // Block JavaScript with isolated scope
+            const blockType = '9372';
+
+            // Clear any existing event listeners for this block type
+            if (window.blockCleanupFunctions && window.blockCleanupFunctions[blockType]) {
+                window.blockCleanupFunctions[blockType]();
+            }
+
+            // Initialize cleanup functions registry
+            if (!window.blockCleanupFunctions) {
+                window.blockCleanupFunctions = {};
+            }
+
+            // Helper function to add event listeners safely
+            const blockEventListeners = [];
+
+            function addBlockEventListener(selector, event, handler) {
+                const elements = document.querySelectorAll(selector);
+                elements.forEach(element => {
+                    element.addEventListener(event, handler);
+                    blockEventListeners.push({
+                        element,
+                        event,
+                        handler
+                    });
+                });
+            }
+
+            // Store cleanup function for this block type
+            window.blockCleanupFunctions[blockType] = function() {
+                blockEventListeners.forEach(({
+                    element,
+                    event,
+                    handler
+                }) => {
+                    element.removeEventListener(event, handler);
+                });
+                blockEventListeners.length = 0; // Clear the array
+            };
+
+            // User's block JavaScript code
+            // Usage: Use addBlockEventListener(selector, event, handler) for safe event handling
+            // Example: addBlockEventListener('.my-button', 'click', function() { ... });
+            try {
+                document.querySelectorAll(".counting").forEach((function(t) {
+                    const n = parseInt(t.getAttribute("data-count")),
+                        e = parseInt(t.textContent),
+                        o = performance.now();
+                    requestAnimationFrame((function r(a) {
+                        const c = a - o,
+                            i = Math.min(c / 3e3, 1),
+                            u = Math.floor(e + (n - e) * i);
+                        t.textContent = u + "+", i < 1 ? requestAnimationFrame(r) : t.textContent = n + "+"
+                    }))
+                }));
+            } catch (error) {
+                console.error('Block JavaScript Error (Type: ' + blockType + '):', error);
+            }
+        })();
+
+        /* Block Type: 247 - Added once for all instances */
+        /* Benefits: Prevents duplicate JS execution, better performance, proper cleanup */
+        (function() {
+            // Block JavaScript with isolated scope
+            const blockType = '247';
+
+            // Clear any existing event listeners for this block type
+            if (window.blockCleanupFunctions && window.blockCleanupFunctions[blockType]) {
+                window.blockCleanupFunctions[blockType]();
+            }
+
+            // Initialize cleanup functions registry
+            if (!window.blockCleanupFunctions) {
+                window.blockCleanupFunctions = {};
+            }
+
+            // Helper function to add event listeners safely
+            const blockEventListeners = [];
+
+            function addBlockEventListener(selector, event, handler) {
+                const elements = document.querySelectorAll(selector);
+                elements.forEach(element => {
+                    element.addEventListener(event, handler);
+                    blockEventListeners.push({
+                        element,
+                        event,
+                        handler
+                    });
+                });
+            }
+
+            // Store cleanup function for this block type
+            window.blockCleanupFunctions[blockType] = function() {
+                blockEventListeners.forEach(({
+                    element,
+                    event,
+                    handler
+                }) => {
+                    element.removeEventListener(event, handler);
+                });
+                blockEventListeners.length = 0; // Clear the array
+            };
+
+            // User's block JavaScript code
+            // Usage: Use addBlockEventListener(selector, event, handler) for safe event handling
+            // Example: addBlockEventListener('.my-button', 'click', function() { ... });
+            try {
+                var swiper = new Swiper(".leaders-slider", {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: !1
+                    },
+                    speed: 400,
+                    mousewheel: {
+                        sensitivity: 2
+                    },
+                    autoplay: !1,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev"
+                    },
+                    breakpoints: {
+                        375: {
+                            slidesPerView: 1,
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: !0
+                            }
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: !0
+                            }
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: !0
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('Block JavaScript Error (Type: ' + blockType + '):', error);
+            }
+        })();
+
+        /* Block Type: 443 - Added once for all instances */
+        /* Benefits: Prevents duplicate JS execution, better performance, proper cleanup */
+        (function() {
+            // Block JavaScript with isolated scope
+            const blockType = '443';
+
+            // Clear any existing event listeners for this block type
+            if (window.blockCleanupFunctions && window.blockCleanupFunctions[blockType]) {
+                window.blockCleanupFunctions[blockType]();
+            }
+
+            // Initialize cleanup functions registry
+            if (!window.blockCleanupFunctions) {
+                window.blockCleanupFunctions = {};
+            }
+
+            // Helper function to add event listeners safely
+            const blockEventListeners = [];
+
+            function addBlockEventListener(selector, event, handler) {
+                const elements = document.querySelectorAll(selector);
+                elements.forEach(element => {
+                    element.addEventListener(event, handler);
+                    blockEventListeners.push({
+                        element,
+                        event,
+                        handler
+                    });
+                });
+            }
+
+            // Store cleanup function for this block type
+            window.blockCleanupFunctions[blockType] = function() {
+                blockEventListeners.forEach(({
+                    element,
+                    event,
+                    handler
+                }) => {
+                    element.removeEventListener(event, handler);
+                });
+                blockEventListeners.length = 0; // Clear the array
+            };
+
+            // User's block JavaScript code
+            // Usage: Use addBlockEventListener(selector, event, handler) for safe event handling
+            // Example: addBlockEventListener('.my-button', 'click', function() { ... });
+            try {
+                /* Enter your JavaScript code here */
+            } catch (error) {
+                console.error('Block JavaScript Error (Type: ' + blockType + '):', error);
+            }
+        })();
+
+        /* Block Type: 248 - Added once for all instances */
+        /* Benefits: Prevents duplicate JS execution, better performance, proper cleanup */
+        (function() {
+            // Block JavaScript with isolated scope
+            const blockType = '248';
+
+            // Clear any existing event listeners for this block type
+            if (window.blockCleanupFunctions && window.blockCleanupFunctions[blockType]) {
+                window.blockCleanupFunctions[blockType]();
+            }
+
+            // Initialize cleanup functions registry
+            if (!window.blockCleanupFunctions) {
+                window.blockCleanupFunctions = {};
+            }
+
+            // Helper function to add event listeners safely
+            const blockEventListeners = [];
+
+            function addBlockEventListener(selector, event, handler) {
+                const elements = document.querySelectorAll(selector);
+                elements.forEach(element => {
+                    element.addEventListener(event, handler);
+                    blockEventListeners.push({
+                        element,
+                        event,
+                        handler
+                    });
+                });
+            }
+
+            // Store cleanup function for this block type
+            window.blockCleanupFunctions[blockType] = function() {
+                blockEventListeners.forEach(({
+                    element,
+                    event,
+                    handler
+                }) => {
+                    element.removeEventListener(event, handler);
+                });
+                blockEventListeners.length = 0; // Clear the array
+            };
+
+            // User's block JavaScript code
+            // Usage: Use addBlockEventListener(selector, event, handler) for safe event handling
+            // Example: addBlockEventListener('.my-button', 'click', function() { ... });
+            try {
+                /* Enter your JavaScript code here */
+            } catch (error) {
+                console.error('Block JavaScript Error (Type: ' + blockType + '):', error);
+            }
+        })();
+
+        /* Block Type: 571 - Added once for all instances */
+        /* Benefits: Prevents duplicate JS execution, better performance, proper cleanup */
+        (function() {
+            // Block JavaScript with isolated scope
+            const blockType = '571';
+
+            // Clear any existing event listeners for this block type
+            if (window.blockCleanupFunctions && window.blockCleanupFunctions[blockType]) {
+                window.blockCleanupFunctions[blockType]();
+            }
+
+            // Initialize cleanup functions registry
+            if (!window.blockCleanupFunctions) {
+                window.blockCleanupFunctions = {};
+            }
+
+            // Helper function to add event listeners safely
+            const blockEventListeners = [];
+
+            function addBlockEventListener(selector, event, handler) {
+                const elements = document.querySelectorAll(selector);
+                elements.forEach(element => {
+                    element.addEventListener(event, handler);
+                    blockEventListeners.push({
+                        element,
+                        event,
+                        handler
+                    });
+                });
+            }
+
+            // Store cleanup function for this block type
+            window.blockCleanupFunctions[blockType] = function() {
+                blockEventListeners.forEach(({
+                    element,
+                    event,
+                    handler
+                }) => {
+                    element.removeEventListener(event, handler);
+                });
+                blockEventListeners.length = 0; // Clear the array
+            };
+
+            // User's block JavaScript code
+            // Usage: Use addBlockEventListener(selector, event, handler) for safe event handling
+            // Example: addBlockEventListener('.my-button', 'click', function() { ... });
+            try {
+                window.openVideoModal = function(videoUrl) {
+                    const modal = document.getElementById('videoModal');
+                    const iframe = document.getElementById('videoIframe');
+                    modal.classList.remove('hidden');
+                    iframe.src = videoUrl;
+                }
+
+                window.closeVideoModal = function() {
+                    const modal = document.getElementById('videoModal');
+                    const iframe = document.getElementById('videoIframe');
+                    modal.classList.add('hidden');
+                    iframe.src = '';
+                }
+            } catch (error) {
+                console.error('Block JavaScript Error (Type: ' + blockType + '):', error);
+            }
+        })();
+
+        /* Block Type: 572 - Added once for all instances */
+        /* Benefits: Prevents duplicate JS execution, better performance, proper cleanup */
+        (function() {
+            // Block JavaScript with isolated scope
+            const blockType = '572';
+
+            // Clear any existing event listeners for this block type
+            if (window.blockCleanupFunctions && window.blockCleanupFunctions[blockType]) {
+                window.blockCleanupFunctions[blockType]();
+            }
+
+            // Initialize cleanup functions registry
+            if (!window.blockCleanupFunctions) {
+                window.blockCleanupFunctions = {};
+            }
+
+            // Helper function to add event listeners safely
+            const blockEventListeners = [];
+
+            function addBlockEventListener(selector, event, handler) {
+                const elements = document.querySelectorAll(selector);
+                elements.forEach(element => {
+                    element.addEventListener(event, handler);
+                    blockEventListeners.push({
+                        element,
+                        event,
+                        handler
+                    });
+                });
+            }
+
+            // Store cleanup function for this block type
+            window.blockCleanupFunctions[blockType] = function() {
+                blockEventListeners.forEach(({
+                    element,
+                    event,
+                    handler
+                }) => {
+                    element.removeEventListener(event, handler);
+                });
+                blockEventListeners.length = 0; // Clear the array
+            };
+
+            // User's block JavaScript code
+            // Usage: Use addBlockEventListener(selector, event, handler) for safe event handling
+            // Example: addBlockEventListener('.my-button', 'click', function() { ... });
+            try {
+                /* Enter your JavaScript code here */
+            } catch (error) {
+                console.error('Block JavaScript Error (Type: ' + blockType + '):', error);
+            }
+        })();
+
+        /* Block Type: 249 - Added once for all instances */
+        /* Benefits: Prevents duplicate JS execution, better performance, proper cleanup */
+        (function() {
+            // Block JavaScript with isolated scope
+            const blockType = '249';
 
             // Clear any existing event listeners for this block type
             if (window.blockCleanupFunctions && window.blockCleanupFunctions[blockType]) {
@@ -4501,11 +4816,11 @@ DataSpy Technologies is a growing corporate training provider focused on practic
             }
         })();
 
-        /* Block Type: 1288 - Added once for all instances */
+        /* Block Type: 791 - Added once for all instances */
         /* Benefits: Prevents duplicate JS execution, better performance, proper cleanup */
         (function() {
             // Block JavaScript with isolated scope
-            const blockType = '1288';
+            const blockType = '791';
 
             // Clear any existing event listeners for this block type
             if (window.blockCleanupFunctions && window.blockCleanupFunctions[blockType]) {
