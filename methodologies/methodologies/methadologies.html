@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr" class="light">
 
 <head>
-    
+    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="en-us">
@@ -11,15 +11,15 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <link rel="profile" href="LOGO.webp">
-    <link rel="shortcut icon" type="image/x-icon" href="LOGO.webp">
-    <link rel="apple-touch-icon-precomposed" href="LOGO.webp">
+    <link rel="profile" href="/LOGO.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/LOGO.png">
+    <link rel="apple-touch-icon-precomposed" href="/LOGO.png">
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-    <title>Dataspy Technologies.</title>
+    <title>Our Work Methodology for Building Software Solutions</title>
 
-    <meta name="description" content="With over 2 decades of experience, we exactly know your needs in the process of building a great software product and our methodology personifies it.">
+    <meta name="description" content=" We exactly know your needs in the process of building a great software product and our methodology personifies it.">
     <meta name="keywords" content="Our Work Methodology">
 
     <!-- Open Graph Meta Tags -->
@@ -29,9 +29,9 @@
     <meta property="og:description" content="With over 2 decades of experience, we exactly know your needs in the process of building a great software product and our methodology personifies it.">
 
     <meta property="og:url" content="https://www.dataspy.com/methodologies/">
-    <meta property="og:site_name" content="DATASPY">
+    <meta property="og:site_name" content="Dataspy">
 
-    
+    <meta property="og:image" content="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2022/02/whatsyourides-img.jpg">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="172">
     <meta property="og:image:type" content="image/jpeg">
@@ -1407,7 +1407,7 @@
             }
         }
 
-    /* ===== MOBILE NAV ONLY ===== */
+            /* ===== MOBILE NAV ONLY ===== */
 
 .mobile-header {
   display: none;
@@ -1515,7 +1515,6 @@
     padding-top: 56px;
   }
 }
-
 
         .header-icon {
             width: 22px;
@@ -2265,96 +2264,6 @@
             border-left: 4px solid #3b82f6;
             color: #1e40af;
         }
-
-        /* Custom CSS for Horizontal Scrolling Logo Section */
-
-/* Keyframe animation definition */
-@keyframes scroll-left {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-/* Keyframe animation definition for the 'left' direction (right-to-left scrolling) */
-@keyframes scroll-right {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-.cont {
-    /* Use 'max-width: none' to allow the child scrolling container to be wider than the viewport */
-    max-width: none; 
-}
-
-.scorri {
-    /* Required to contain the scrolling list */
-    display: flex;
-    white-space: nowrap;
-    overflow: hidden; /* Hide the duplicated content until it's positioned for the loop */
-}
-
-.tithome {
-    /* This is the element that actually moves */
-    display: inline-block;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-    /* Animation properties, using the value from the HTML attribute if available */
-    animation: scroll-left var(--animation-speed, 0s) linear infinite;
-    animation-delay: 0s; /* Start immediately */
-
-    /* Duplicate the list content to create the seamless loop effect */
-    content: attr(data-content); 
-}
-
-/* The actual list items */
-.tithome li {
-    display: inline-block;
-    padding: 0 10px; /* Space between logos */
-    height: 40px; /* Define a consistent height for the list item */
-    line-height: 40px; /* Vertically center the content */
-}
-
-.tithome li img {
-    /* Ensure images are vertically centered and maintain aspect ratio */
-    display: inline-block;
-    vertical-align: middle; 
-    max-width: 100%;
-    /* Override fixed styles with object-fit for safety, though Tailwind's object-contain is there */
-    object-fit: contain; }
-
-/* Specific scrolling direction */
-.scorri.left .tithome {
-    /* For right-to-left scrolling (ltr) */
-    animation-name: scroll-left;
-}
-
-.scorri.right .tithome {
-    /* For left-to-right scrolling (rtl) */
-    animation-name: scroll-right;
-}
-
-/* Media Query for Mobile (Optional: slow down animation on smaller screens) */
-@media (max-width: 768px) {
-    .tithome {
-        animation-duration: 8s !important;
-    }
-    .tithome li {
-        padding: 0 20px;
-    }
-    .tithome li img {
-        width: 120px !important;
-        height: 40px !important;
-    }
-}
     </style>
     <!-- Google Tag Manager -->
     <script>
@@ -2387,52 +2296,50 @@
 
     <!-- Global Assets Debug Info (only in development) -->
 
-    <div  class="page-content">
-
-        <!-- Pure content without wrapper when controls are hidden -->
+    <div class="page-content">
+   <!-- Pure content without wrapper when controls are hidden -->
         <header style="height:0px;" id="desktop" class="globalNav initialized noDropdownTransition">
-            <nav  style="position: relative;top:-22px;" class="container-lg mx-auto">
+            <nav style="position: relative;top:-22px;" class="container-lg mx-auto">
                 <ul class="navRoot flex items-center justify-between">
                     <!-- Logo Part -->
                     <li class="navSection logo">
                         <a class="rootLink item-home colorize" aria-label="DATASPY LOGO" href="/" title="DATASPY">
-                <img src="LOGO.webp" class="max-w-full h-auto" alt="DATASPY" width="116" height="80">
+                <img src="/LOGO.webp" class="max-w-full h-auto" alt="DATASPY" width="116" height="80">
                 </a>
                     </li>
                     <!-- Navigation Part -->
-                    <li style="border-radius: 0%;top: 10px;" class="navSection primary flex items-center justify-center">
+                    <li style="border-radius: 0%;top: 10px;"  class="navSection primary flex items-center justify-center">
                         <!-- Mobile Logo -->
                         <div class="mb-logo">
                             <a class="p-0 link-active" aria-label="DATASPY Logo" href="/" title="DATASPY">
-                    <img src="LOGO.webp" class="max-w-full h-auto" alt="DATASPY" width="32" height="32">
+                    <img src="/LOGO.webp" class="max-w-full h-auto" alt="DATASPY" width="32" height="32">
                     </a>
                         </div>
                         <!-- Main Navigation Links -->
-                        <a href="ABOUT.html" class="rootLink hasDropdown" data-dropdown="about" aria-haspopup="true" aria-expanded="false" title="About">
+                        <a href="/INDEX/ABOUT.html" class="rootLink hasDropdown" data-dropdown="about" aria-haspopup="true" aria-expanded="false" title="About">
                 <span>About</span>
                 </a>
-                        <a href="FOCUS.html" class="rootLink hasDropdown" data-dropdown="focus" aria-haspopup="true" aria-expanded="false" title="Focus">
+                        <a href="/PROPER/FOCUS/FOCUS.html" class="rootLink hasDropdown" data-dropdown="focus" aria-haspopup="true" aria-expanded="false" title="Focus">
                 <span>Focus</span>
                 </a>
-                        <a href="industries.html" class="rootLink hasDropdown" data-dropdown="industries" aria-haspopup="true" aria-expanded="false" title="Industries">
+                        <a href="/industries/index.html" class="rootLink hasDropdown" data-dropdown="industries" aria-haspopup="true" aria-expanded="false" title="Industries">
                 <span>Industries</span>
                 </a>
                         <a href="/what-we-do/index.html" class="rootLink hasDropdown" data-dropdown="what-we-do" aria-haspopup="true" aria-expanded="false" title="Services">
                 <span>Services</span>
                 </a>
-                        <a href="methodologies.html" class="rootLink hasDropdown" data-dropdown="methodology-2" aria-haspopup="true" aria-expanded="false" title="Methodology">
+                        <a href="/methodologies/methodologies/index.html" class="rootLink hasDropdown" data-dropdown="methodology-2" aria-haspopup="true" aria-expanded="false" title="Methodology">
                 <span>Methodology</span>
                 </a>
                     
-                <a class="rootLink btn-orange sideform-open ctn-btn" onclick="Typebot.toggle()" href="/contact/contact.html"> button</a>
                         <!-- Mobile Contact Button -->
                         <button type="button" class="rootLink btn-orange sideform-open ctn-btn" onclick="Typebot.toggle()">
-                <a class="rootLink btn-orange sideform-open ctn-btn" onclick="Typebot.toggle()" href="/contact/contact.html"> button</a>
+                Contact Us
                 </button>
                     </li>
                     <!-- Contact and Theme Icons -->
                     <li class="navSection secondary flex items-center justify-end">
-                        <button style="border-radius: 0%;" type="button" class="rootLink btn-orange sideform-open" onclick="window.location.href='/contact/contact.html'" onclick="Typebot.toggle()">
+                        <button type="button" class="rootLink btn-orange sideform-open" onclick="Typebot.toggle()">
                 Contact Us <span class="fa ph-bold ph-arrow-right ml-2"></span>
                 </button>
                     </li>
@@ -2450,7 +2357,7 @@
                             <div class="linkGroup">
                                 <div class="row flex flex-wrap -mx-2">
                                     <div class="col-md-6 mar-top-20 w-full md:w-1/2 px-2 mt-5">
-                                        <a href="ABOUT.html" title="Team">
+                                        <a href="/INDEX/ABOUT.html" title="Team">
                                             <div class="linkGroupCol-head">
                                                 <div class="header-icon">
                                                     <span class="menu-icon menu-icon icon-m-team"></span>
@@ -2463,7 +2370,7 @@
                                         </a>
                                     </div>
                                     <div class="col-md-6 mar-top-20 w-full md:w-1/2 px-2 mt-5">
-                                        <a href="contact.html" title="How We Work">
+                                        <a href="/Contact/contact.html" title="How We Work">
                                             <div class="linkGroupCol-head">
                                                 <div class="header-icon">
                                                     <span class="menu-icon menu-icon icon-ind-improved-collaboration"></span>
@@ -2476,7 +2383,7 @@
                                         </a>
                                     </div>
                                     <div class="col-md-6 mar-top-20 w-full md:w-1/2 px-2 mt-5">
-                                        <a href="contact.html" title="Contact">
+                                        <a href="/contact/contact.html" title="Contact">
                                             <div class="linkGroupCol-head">
                                                 <div class="header-icon">
                                                     <span class="menu-icon menu-icon icon-m-contact"></span>
@@ -2489,7 +2396,7 @@
                                         </a>
                                     </div>
                                     <div class="col-md-6 mar-top-20 w-full md:w-1/2 px-2 mt-5">
-                                        <a href="FOCUS.html" title="Careers">
+                                        <a href="/PROPER/FOCUS/FOCUS.html" title="Careers">
                                             <div class="linkGroupCol-head">
                                                 <div class="header-icon">
                                                     <span class="menu-icon menu-icon icon-m-careers"></span>
@@ -2509,14 +2416,14 @@
                     <div class="dropdownSection left" data-dropdown="focus" aria-hidden="true">
                         <div class="dropdownContent">
                             <div class="linkInfoGroup blue-gradient">
-                                
+                            
                                 <div class="contactInfo">
                                     <div class="infoWrap">
                                         <span class="sub-title">Build your</span>
                                         <h3>Agile Team</h3>
                                         <p>Create your own agile team by forming right set of resources skilled in specific streams.</p>
                                     </div>
-                                    <a href="contact.html" class="contactBtn" title="Contact Us">
+                                    <a href="/Contact/contact.html" class="contactBtn" title="Contact Us">
                             Contact Us
                             </a>
                                 </div>
@@ -2528,7 +2435,7 @@
                                             <span class="menu-icon menu-icon icon-m-fa-enterprise"></span>
                                         </div>
                                         <h3>
-                                            <a href="FOCUS.html" title="Enterprise Applications">Enterprise Applications</a>
+                                            <a href="/PROPER/FOCUS/FOCUS.html" title="Enterprise Applications">Enterprise Applications</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2541,7 +2448,7 @@
                                             <span class="menu-icon menu-icon icon-m-fa-ai"></span>
                                         </div>
                                         <h3>
-                                            <a href="FOCUS.html" title="Artificial Intelligence">Artificial Intelligence</a>
+                                            <a href="/PROPER/FOCUS/FOCUS.html" title="Artificial Intelligence">Artificial Intelligence</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2554,7 +2461,7 @@
                                             <span class="menu-icon menu-icon icon-m-fa-digital-commerce"></span>
                                         </div>
                                         <h3>
-                                            <a href="FOCUS.html" title="Digital Commerce">Digital Commerce</a>
+                                            <a href="/PROPER/FOCUS/FOCUS.html" title="Digital Commerce">Digital Commerce</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2567,7 +2474,7 @@
                                             <span class="menu-icon menu-icon icon-m-fa-tech-integration"></span>
                                         </div>
                                         <h3>
-                                            <a href="FOCUS.html" title="Technology Integration">Technology Integration</a>
+                                            <a href="/PROPER/FOCUS/FOCUS.html" title="Technology Integration">Technology Integration</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2580,7 +2487,7 @@
                                             <span class="menu-icon menu-icon icon-m-fa-automation"></span>
                                         </div>
                                         <h3>
-                                            <a href="FOCUS.html" title="Business Automation">Business Automation</a>
+                                            <a href="/PROPER/FOCUS/FOCUS.html" title="Business Automation">Business Automation</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2642,7 +2549,7 @@
                                             <span class="menu-icon menu-icon icon-m-ind-healthcare"></span>
                                         </div>
                                         <h3>
-                                            <a href="/industries/healthcare/" title="Healthcare">Healthcare</a>
+                                            <a href="/industries/index.html" title="Healthcare">Healthcare</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2655,7 +2562,7 @@
                                             <span class="menu-icon menu-icon icon-m-ind-logistic"></span>
                                         </div>
                                         <h3>
-                                            <a href="/industries/logistic/" title="logistic">Logistic</a>
+                                            <a href="/industries/index.html" title="logistic">Logistic</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2668,7 +2575,7 @@
                                             <span class="menu-icon menu-icon icon-m-ind-Education"></span>
                                         </div>
                                         <h3>
-                                            <a href="/industries/Education/" title="Education">Education</a>
+                                            <a href="/industries/index.html" title="Education">Education</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2681,7 +2588,7 @@
                                             <span class="menu-icon menu-icon icon-m-ind-IT & Telecom"></span>
                                         </div>
                                         <h3>
-                                            <a href="/industries/IT & Telecom/" title="IT & Telecom">IT & Telecom</a>
+                                            <a href="/industries/index.html" title="IT & Telecom">IT & Telecom</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2694,7 +2601,7 @@
                                             <span class="menu-icon menu-icon icon-m-ind-ON Demand"></span>
                                         </div>
                                         <h3>
-                                            <a href="/industries/ON Demand/" title="ON Demand">ON Demand</a>
+                                            <a href="/industries/index.html" title="ON Demand">ON Demand</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2707,7 +2614,7 @@
                                             <span class="menu-icon menu-icon icon-m-ind-Manufacturing"></span>
                                         </div>
                                         <h3>
-                                            <a href="/industries/Manufacturing/" title="Manufacturing">Manufacturing</a>
+                                            <a href="/industries/index.html" title="Manufacturing">Manufacturing</a>
                                         </h3>
                                     </div>
                                     <div class="linkGroupCol-content">
@@ -2909,8 +2816,9 @@
   <div class="mobile-top">
     <label for="mobile-menu-toggle" class="mobile-hamburger">☰</label>
 
-
-
+    <div class="mobile-logo">
+      <img src="/LOGO.webp" alt="Logo">
+    </div>
   </div>
 
   <nav class="mobile-nav">
@@ -2959,562 +2867,311 @@
       <input type="checkbox" id="Methodlogies-m">
       <label for="Methodolgies-m">Methodologies </label>
     </div>
-
+    <a href="/contact/" class="mobile-cta">Contact Us</a>
 
   </nav>
 </header>
-
-
         <!-- Pure content without wrapper when controls are hidden -->
-       <section class="section-space dark:bg-gray-900 dark:text-white pt-0 mt-[60px] min-[1024.25px]:mt-[90px]">
-            <div class="w-full">
-                <div class="flex items-center flex-wrap ">
-
-                    <!-- Left: Text -->
-                    <div class="max-[1023.75px]:order-2 max-[1023.75px]:w-full lg:w-2/5 xl:w-2/5 px-6 lg:px-8 pt-2 xl:px-12 max-[1023.75px]:mt-6 md:pr-8 ">
-
-                        <span class="font-normal mb-4">SPY IN THE WORLD OF BUISNESS WITH AI!</span>
-
-                        <h1 class="font-extrabold tracking-tighter mb-4 ">Transforming Businesses with AI-Powered Solutions</h1>
-
-
-                        <p class="mb-6">DataSpy Technologies has been empowering global businesses since 2023 with cutting-edge AI solutions, intelligent automation, and data-driven insights. We help companies uncover hidden opportunities, optimize operations, and stay ahead with smart, scalable digital innovation.
-                        </p>
-
-                        <button class="relative overflow-hidden bg-primary-500 hover:bg-primary-500 dark:bg-primary-500 dark:hover:bg-primary-500 text-white text-base font-semibold rounded-full px-5 py-3 text-center inline-flex items-center transition-colors duration-200 -tracking-[0.72px]"
-                            onclick="Typebot.toggle()">
-           <a href="/Contact/contact.html"> Get a Free AI Consultation</a>
-              <span class="ph-bold ph-arrow-right ms-2"></span>
-          </button>
-
-                        <!-- 
-         -->
-                    </div>
-
-                    <!-- Right: Video -->
-                    <div class="max-[1023.75px]:order-1  max-[1023.75px]:w-full lg:w-3/5 xl:w-3/5 relative section-block">
-                        <div class="relative group w-full">
-                            <video class="section-video w-full  rounded-0 " src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2025/05/ai-video-v3.mp4" muted="" playsinline="" autoplay="" loop="" poster="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2025/05/hm-ai-video-poster-img-v1-1.webp">
-            <track src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2025/05/ai-video-v3.vtt" kind="captions" srclang="en" label="english_captions">
-          </video>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pure content without wrapper when controls are hidden -->
-    
-
-        <!-- Pure content without wrapper when controls are hidden -->
-        <section class="dark:bg-gray-900 section-space">
+        <div class="mt-[60px] lg:mt-[90px] py-16 md:py-24  lg:py-0 dark:bg-gray-900 section-space flex flex-col items-center justify-center lg:h-[calc(100vh-90px)]">
             <div class="cmsContainer text-center">
-                <h2 class="mb-10 font-extrabold tracking-tight dark:text-white">
-                    Transform Ideas into High-Performance Digital Products </h2>
-                <p class="mb-5 font-normal dark:text-gray-300">
-                   DataSpy Technologies delivers world-class web and mobile solutions designed to elevate businesses across industries. Our approach focuses on building custom digital platforms that are fast, secure, and adaptable to evolving market needs. From dynamic websites and sophisticated web applications to immersive mobile experiences, every solution is crafted with precision to ensure maximum impact and long-term scalability. </p>
-                   <br><p><b>They deliver comprehensive digital solutions that help organizations thrive in a rapidly changing landscape. Our web development capabilities enable the creation of scalable platforms, intelligent digital workflows, and rich online experiences tailored to business objectives. Each solution is meticulously crafted to ensure security, high performance, and long-term adaptability.
-
-Our solutions bring powerful functionality to users on the go, offering smooth performance, modern interfaces, and consistent experiences across devices and environments.</p>
-                   </b> </div>
-        </section>
-
-        <!-- Pure content without wrapper when controls are hidden -->
-        <section class="">
-            <div class="cmsContainer text-center">
-                <h2 class="mb-10 font-extrabold tracking-tight dark:text-white">
-                   Advanced AI and Intelligent Automation Solutions </h2>
-                <p class="mb-5 font-normal dark:text-gray-300">
-                    DataSpy Technologies delivers sophisticated AI and machine intelligence solutions designed to elevate business performance and enable smarter decision-making. Our expertise lies in creating tailored AI systems that adapt to complex requirements, offering organizations a clear path to innovation, automation, and sustained competitive advantage. Through strategic use of intelligent models, automated workflows, and insight-driven architectures, we transform how businesses operate in a digital-first world.
-                    <br>
-                    <br> We pride ourselves on building intelligent applications that automate processes, improve efficiency, and enhance user experiences. Whether it’s developing predictive analytics models, creating data-driven platforms for actionable
-                    insights, or designing AI-powered products for smarter decision-making, Dataspy empowers startups and enterprises to stay ahead in today’s competitive, AI-driven landscape.
-                    <br>
-                    <br> With proven expertise in cutting-edge AI/ML algorithms, frameworks, and technologies, we ensure every solution is uniquely tailored to address your business challenges. Partner with DATASPY to unlock the potential of artificial
-                    intelligence and transform your vision into reality. Contact us today to discuss how we can help your business thrive in the evolving world of AI.
-                    <br>            </div>
-        </section>
-
-        <!-- Pure content without wrapper when controls are hidden -->
-        <section class="dark:bg-gray-900 section-space">
-            <div class="cmsContainer">
-                <div class="max-w-6xl mx-auto text-center">
-                    <p class="text-[24px] md:text-[32px] leading-[1.5] font-light max-w-3xl mx-auto px-0 sm:px-0 text-gray-900 dark:text-white">
-                        We’
-ve empowered brands to achieve remarkable growth, with many experiencing up to 90% revenue improvement in their first year with us                    </p>
-                </div>
-                <div class="md:grid md:grid-cols-3 gap-x-8">
-                    <div class="md:col-span-1 h-full relative mt-10 p-6">
-                        <div class="flex justify-center gap-1 text-7xl font-extrabold mb-5">
-                            <span class="text-secondary-500 dark:text-secondary-500 counting" data-count="300 +">30+</span>
-
-                        </div>
-                        <p class="dark:text-gray-300 text-base text-center">Satisfied Clients Across wide</p>
-                    </div>
-                    <div class="md:col-span-1 h-full relative mt-10 p-6">
-                        <div class="flex justify-center gap-1 text-7xl font-extrabold mb-5">
-                            <span class="text-secondary-500 dark:text-secondary-500 counting" data-count="7000 +">50</span>
-
-                        </div>
-                        <p class="dark:text-gray-300 text-base text-center">Projects Delivered Successfully</p>
-                    </div>
-                    <div class="md:col-span-1 h-full relative mt-10 p-6">
-                        <div class="flex justify-center gap-1 text-7xl font-extrabold mb-5">
-                            <span class="text-secondary-500 dark:text-secondary-500 counting" data-count="600 +">20+</span>
-
-                        </div>
-                        <p class="dark:text-gray-300 text-base text-center">Experts Under the Same Roof</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pure content without wrapper when controls are hidden -->
-        <section class="dark:bg-gray-900 section-space">
-            <div class="cmsContainer">
-                <div class="max-w-7xl mx-auto">
-                    <h2 class="mb-[20px] lg:mb-[40px] font-extrabold tracking-tight dark:text-white">
-                        We Simplify Software Development Process
-                    </h2>
-
-                    <div class="md:grid md:grid-cols-4 gap-x-4 ">
-                        <div class="md:col-span-1 h-full relative mt-10">
-                            <div class="overflow-hidden mb-6 md:mb-10 flex items-center relative h-12 after:hidden md:after:block after:absolute after:content-[''] after:w-[60%] after:ml-[65px] after:translate-y-0 after:border after:border-secondary-500 dark:after:border-secondary-300 after:border-dashed">
-                               <img src="add.png">
-                            </div>
-                            <h5 class="font-semibold mb-4 dark:text-white">
-                                Discover
-                            </h5>
-                            <p class="dark:text-gray-300">
-                                We shape brands through exploration, applying in-depth research to challenge assumptions at every turn
-                            </p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-10">
-                            <div class="overflow-hidden mb-6 md:mb-10 flex items-center relative h-12 after:hidden md:after:block after:absolute after:content-[''] after:w-[60%] after:ml-[65px] after:translate-y-0 after:border after:border-secondary-500 dark:after:border-secondary-300 after:border-dashed">
-                               <img src = "sub.png">                            </div>
-                            <h5 class="font-semibold mb-4 dark:text-white">
-                                Design
-                            </h5>
-                            <p class="dark:text-gray-300">
-                                Our design approach is to simplify. We embrace the joy in creating something unique that is easy for end users.
-                            </p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-10">
-                            <div class="overflow-hidden mb-6 md:mb-10 flex items-center relative h-12 after:hidden md:after:block after:absolute after:content-[''] after:w-[60%] after:ml-[65px] after:translate-y-0 after:border after:border-secondary-500 dark:after:border-secondary-300 after:border-dashed">
-
-                                <img src = "mul.png">                             </div>
-                            <h5 class="font-semibold mb-4 dark:text-white">
-                                Build
-                            </h5>
-                            <p class="dark:text-gray-300">
-                                Using modern technologies, we build with efficiency and skill, creating flexible and scalable business-driven solutions.
-                            </p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-10">
-                            <div class="overflow-hidden mb-6 md:mb-10 flex items-center relative h-12 ">
-
-                                <img src = "div.png">                             </div>
-                            <h5 class="font-semibold mb-4 dark:text-white">
-                                Deliver
-                            </h5>
-                            <p class="dark:text-gray-300">
-                                We take an iterative approach to both our work and our practice, always looking for ways to improve what we do.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pure content without wrapper when controls are hidden -->
-        <section class="dark:bg-gray-900 section-space">
-            <div class="cmsContainer">
-                <h2 class="text-center font-extrabold tracking-tight dark:text-white mb-6 sm:mb-8 lg:mb-16">
-                    AI-Driven Case Studies
-                </h2>
-
-                <div class="relative rounded-lg overflow-hidden mb-4 sm:mb-8 lg:mb-10 group cursor-pointer">
-                    <div class="w-full h-[300px] sm:h-[500px] lg:h-[600px] overflow-hidden">
-                        <img src="case.webp" alt=" How Data-Driven Decisions Can Reduce Business Costs" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
-                    </div>
-
-                    <!-- Content Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent">
-                        <div class="absolute bottom-0 md:top-0 p-4 sm:p-6 lg:p-[60px] max-w-full lg:max-w-[80%] flex flex-col">
-                            <p class="text-white uppercase mb-3 sm:mb-4 lg:mb-[20px] text-[18px] md:text-sm font-semibold tracking-[2px] sm:tracking-[3px]">
-                               How Data-Driven Decisions Can Reduce Business Costs
-                            </p>
-
-                            <h3 class="hidden md:block text-white font-semibold tracking-tight lg:tracking-[-1.3px] !leading-[1.5] text-left mb-4 sm:mb-6 lg:mb-[20px] pr-4 sm:pr-8 lg:pr-[20%]">
-                                Data helps businesses clearly see where money is being spent without real value. This visibility allows management to cut unnecessary costs without affecting productivity                            </h3>
-
-                            <a href="/cases/case-study-data-driven-costs.html" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-primary-500 hover:bg-primary-500 text-white rounded-full transition-colors duration-300 w-fit font-semibold "
-                                aria-label=" How Data-Driven Decisions Can Reduce Business Costs">
-                        View case study
-                    </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative rounded-lg overflow-hidden mb-4 sm:mb-8 lg:mb-10 group cursor-pointer">
-                    <div class="w-full h-[300px] sm:h-[500px] lg:h-[600px] overflow-hidden">
-                        <img src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2024/10/ai-cs-banner-2.jpg" alt="AI Real Estate Case Study" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
-                    </div>
-
-                    <!-- Content Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent">
-                        <div class="absolute bottom-0 md:top-0 p-4 sm:p-6 lg:p-[60px] max-w-full lg:max-w-[80%] flex flex-col">
-                            <p class="text-white uppercase mb-3 sm:mb-4 lg:mb-[20px] text-[18px] md:text-sm font-semibold tracking-[2px] sm:tracking-[3px]">
-                               Automating Decision-Making with Intelligent Data Systems
-                            </p>
-
-                            <h3 class="hidden md:block text-white font-semibold tracking-tight lg:tracking-[-1.3px] !leading-[1.5] text-left mb-4 sm:mb-6 lg:mb-[20px] pr-4 sm:pr-8 lg:pr-[20%]">
-                                Automating decision-making with intelligent data systems enables businesses to act faster and more accurately by using real-time insights instead of manual judgment.                            </h3>
-
-                            <a href="/cases/case-study-automated-decision-making.html" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-primary-500 hover:bg-primary-500 text-white rounded-full transition-colors duration-300 w-fit font-semibold "
-                                aria-label="Automating Decision-Making with Intelligent Data Systems">
-                        View case study
-                    </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative rounded-lg overflow-hidden mb-4 sm:mb-8 lg:mb-10 group cursor-pointer">
-                    <div class="w-full h-[300px] sm:h-[500px] lg:h-[600px] overflow-hidden">
-                        <img src="cases/case.png" alt="AI Shopping Experience Case Study" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
-                    </div>
-
-                    <!-- Content Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent">
-                        <div class="absolute bottom-0 md:top-0 p-4 sm:p-6 lg:p-[60px] max-w-full lg:max-w-[80%] flex flex-col">
-                            <p class="text-white uppercase mb-3 sm:mb-4 lg:mb-[20px] text-[18px] md:text-sm font-semibold tracking-[2px] sm:tracking-[3px]">
-                                Improving Online Shopping Experiences through AI
-                            </p>
-
-                            <h3 class ="hidden md:block text-white font-semibold tracking-tight lg:tracking-[-1.3px] !leading-[1.5] text-left mb-4 sm:mb-6 lg:mb-[20px] pr-4 sm:pr-8 lg:pr-[20%]">
-                                Redefining E-Commerce with AI: Smarter, Faster, and More Personalized Shopping for Every Customer.
-                            </h3>
-
-                            <a href="/cases/case-study-data-driven-costs.html" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-primary-500 hover:bg-primary-500 text-white rounded-full transition-colors duration-300 w-fit font-semibold "
-                                aria-label="Improving Online Shopping Experiences through AI">
-                        View case study
-                    </a>
-                        </div>
-                    </div>
-                </div>
-
-            
-        </section>
-
-        <!-- Pure content without wrapper when controls are hidden -->
-        <section class="dark:bg-gray-900 section-space">
-            <div class="cmsContainer">
-                <div class="max-w-7xl mx-auto text-center">
-                    <div class="flex flex-col justify-center">
-                        <h2 class="block text-center font-light tracking-[-0.02em] dark:text-white">Driving Intelligent Outcomes</h2>
-                    </div>
-                    <div class="md:grid md:grid-cols-5 gap-x-4 ">
-                        <div class="md:col-span-1 h-full relative mt-[40px] md:mt-[60px]">
-                            <div class="text-4xl md:text-[64px] leading-[1.25] tracking-[-2px] font-extrabold mb-5 text-secondary-500 dark:text-secondary-500">
-                                82%
-                            </div>
-                            <p class="dark:text-gray-300">Automation-Driven Decision Adoption</p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-[40px] md:mt-[60px]">
-                            <div class="text-4xl md:text-[64px] leading-[1.25] tracking-[-2px] font-extrabold mb-5 text-secondary-500 dark:text-secondary-500">
-                                92%
-                            </div>
-                            <p class="dark:text-gray-300">On-Time Project Delivery</p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-[40px] md:mt-[60px]">
-                            <div class="text-4xl md:text-[64px] leading-[1.25] tracking-[-2px] font-extrabold mb-5 text-secondary-500 dark:text-secondary-500">
-                                60+
-                            </div>
-                            <p class="dark:text-gray-300">Industry Innovations</p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-[40px] md:mt-[60px]">
-                            <div class="text-4xl md:text-[64px] leading-[1.25] tracking-[-2px] font-extrabold mb-5 text-secondary-500 dark:text-secondary-500">
-                                95%
-                            </div>
-                            <p class="dark:text-gray-300">Client Cost Savings</p>
-                        </div>
-                        <div class="md:col-span-1 h-full relative mt-[40px] md:mt-[60px]">
-                            <div class="text-4xl md:text-[64px] leading-[1.25] tracking-[-2px] font-extrabold mb-5 text-secondary-500 dark:text-secondary-500">
-                                100+
-                            </div>
-                            <p class="dark:text-gray-300">Client Retention Rate</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pure content without wrapper when controls are hidden -->
-        
-        <!-- Pure content without wrapper when controls are hidden -->
-        <div class="section-space dark:bg-gray-950">
-            <div class="cmsContainer">
-                <div class="flex items-center flex-col lg:flex-row">
-                    <div class="w-full lg:w-[42%] py-4 md:py-10 order-2 lg:order-1">
-                        <div class="flex flex-col justify-center">
-                            <div class="mb-2 dark:text-gray-300 md:block">
-                                Outsourcing demands trust. We deliver it with
-                            </div>
-                            <h2 class="font-extrabold tracking-tight mb-3 dark:text-white">
-                                100% Guarantee.
-                            </h2>
-                            <p class="dark:text-gray-300">
-                                Managing remote team while outsourcing requires a capable and experienced leadership. Our more than two decades of experience guarantees successful project delivery every single time.
-                                <br><br> 
-                            </p>
-                            <div class="mt-6">
-                                <a href="/Contact/contact.html" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-base font-medium bg-primary-500 hover:bg-primary-500 text-white rounded-full transition-colors duration-300 w-fit">
-                                        Reach Us 
-                                        <span class="fas fa-arrow-right ml-2 text-xl"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full lg:w-[58%] order-1 lg:order-2">
-                        <img class="max-w-full 2xl:max-w-[900px]" width="1001" height="639" src="LOGO.webp" alt="100% Guarantee.">
-                    </div>
-                </div>
+                <h1 class="font-extrabold tracking-tight dark:text-white mb-10">Our Methodology: Built on Learning, Improvement & Transparency</h1>
+                <p class="text-xl leading-[1.6] dark:text-gray-300">DataSpy follows a process shaped by continuous learning. We believe clients deserve more than a ready-made software solution. They deserve clarity about how things are built, why they matter, and how they will help. Our structured yet flexible approach ensures smooth execution and meaningful results.</p>
             </div>
         </div>
 
         <!-- Pure content without wrapper when controls are hidden -->
-        <section class="section-space dark:bg-gray-900 overflow-hidden">
-
-            <p class="text-sm font-semibold uppercase mb-2 text-center"></p>
-            <h2 class="font-extrabold tracking-tight text-center dark:text-white mb-8 lg:mb-12">Words from clients</h2>
-
-            <div class="relative">
-                <!-- Swiper -->
-                <div class="swiper testimonialSwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide max-w-[360px] md:max-w-[1100px] mx-auto">
-                            <div class="bg-white overflow-hidden lg:mx-4 dark:bg-gray-800 rounded-2xl shadow-lg relative border-2 border-gray h-full">
-                                <!-- Image Container -->
-                                <div class="relative min-h-[240px] md:min-h-[380px] w-full">
-                                    <div class="sm:block hidden absolute w-[600px] h-full right-[-20px] top-1/2 -translate-y-1/2 z-[1] bg-gradient-to-r from-white from-[17.01%] to-white/0 to-[100%]"></div>
-                                    <img src="WhatsApp Image 2026-01-07 at 2.23.55 PM (1).jpeg" alt="CYBAGE" class="ml-auto h-full "  width="470" height="382">
-                                </div>
-
-                                <!-- Content Overlay -->
-                                <div class="md:absolute min-h-[250px] inset-0 z-20 md:p-8 p-4 flex flex-col gap-5 md:justify-between">
-                                    <!-- Quote -->
-                                    <div>
-                                        <span class="text-primary-500 text-4xl mb-4 block">
-                                        <i class="ph-fill ph-quotes"></i>
-                                    </span>
-                                        <p class="text-base md:text-[18px] xl:text-2xl md:font-semibold max-w-lg md:max-w-[50%] xl:max-w-lg">
-DataSpy Technologies is a growing corporate training provider focused on practical Python and development skills, known for hands-on sessions and industry-aligned curriculum.                                        </p>
-                                    </div>
-
-                                    <!-- Author Info & Play Button -->
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h5 class="font-bold">CYBAGE</h5>
-                                            <p class="text-base md:text-lg tracking-tight">Prop.Cybage</p>
-                                        </div>
-                                </div>
-                            </div>
+        <section class="dark:bg-gray-900 section-space">
+            <div class="cmsContainer">
+                <div class="mx-auto flex justify-center max-w-5xl">
+                    <div class="text-center">
+                        <!-- Tagline -->
+                        <div class="mb-2 text-primary-500 dark:text-primary-500 font-semibold block uppercase">
+                            Our Work Methodology
                         </div>
-                        <div class="swiper-slide max-w-[360px] md:max-w-[1100px] mx-auto">
-                            <div class="bg-white overflow-hidden lg:mx-4 dark:bg-gray-800 rounded-2xl shadow-lg relative border-2 border-gray h-full">
-                                <!-- Image Container -->
-                                <div class="relative min-h-[240px] md:min-h-[380px] w-full">
-                                    <div class="sm:block hidden absolute w-[600px] h-full right-[-20px] top-1/2 -translate-y-1/2 z-[1] bg-gradient-to-r from-white from-[17.01%] to-white/0 to-[100%]"></div>
-                                    <img src="WhatsApp Image 2026-01-07 at 2.24.02 PM (1).jpeg" alt="Bansal Group" class="ml-auto h-full " width="470" height="382">
-                                </div>
 
-                                <!-- Content Overlay -->
-                                <div class="md:absolute min-h-[250px] inset-0 z-20 md:p-8 p-4 flex flex-col gap-5 md:justify-between">
-                                    <!-- Quote -->
-                                    <div>
-                                        <span class="text-primary-500 text-4xl mb-4 block">
-                                        <i class="ph-fill ph-quotes"></i>
-                                    </span>
-                                        <p class="text-base md:text-[18px] xl:text-2xl md:font-semibold max-w-lg md:max-w-[50%] xl:max-w-lg">
-                                            DataSpy Technologies is a practical, industry-focused training provider that emphasizes hands-on learning in Python and related technologies, helping learners build job-ready skills.                                        </p>
-                                    </div>
+                        <!-- Main Heading -->
+                        <h2 class="font-extrabold tracking-tight dark:text-white">
+                            Learn More On
+                        </h2>
+                    </div>
+                </div>
 
-                                    <!-- Author Info & Play Button -->
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h5 class="font-bold">Bansal Group</h5>
-                                            <p class="text-base md:text-lg tracking-tight">WeLearn Educational</p>
-                                        </div>
-                                    </div>
-                                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8 mt-6 lg:mt-12 dark:text-white">
+                    <a href="/methodology/discovery-process/" class="block group no-underline" aria-label="Discovery Workshop">
+                        <div class="relative h-full 
+                            border border-solid border-gray-200 dark:border-gray-700
+                            bg-white dark:bg-gray-900
+                                hover:bg-primary-500 hover:border-primary-600
+                                dark:hover:bg-primary-500 dark:hover:border-primary-500
+                            p-5 transition-all duration-300 ease-in-out 
+                            md:col-span-1 cursor-pointer">
+                            <!-- Icon -->
+                            <div class="mb-5 flex  items-center overflow-hidden relative">
+                                <span class="tech-icon icon-ic-mobile-discovery text-5xl 
+                                        text-primary-500 dark:text-primary-400
+                                            group-hover:text-white
+                                        transition-colors duration-300 ease-in-out">
+                            </span>
                             </div>
+
+                            <!-- Title -->
+                            <h5 class="mb-5 font-extrabold dark:text-white
+                                group-hover:text-white
+                            transition-colors duration-300 ease-in-out">
+                                Discovery Workshop
+                            </h5>
+
+                            <!-- Description -->
+                            <p class="leading-[1.5]
+                            dark:text-gray-300
+                                group-hover:text-white
+                            transition-colors duration-300 ease-in-out">
+                                Transforming idea into a measurable scope with functional UI/UX Design.
+                            </p>
                         </div>
-                        <div class="swiper-slide max-w-[360px] md:max-w-[1100px] mx-auto">
-                            <div class="bg-white overflow-hidden lg:mx-4 dark:bg-gray-800 rounded-2xl shadow-lg relative border-2 border-gray h-full">
-                                <!-- Image Container -->
-                                <div class="relative min-h-[240px] md:min-h-[380px] w-full">
-                                    <div class="sm:block hidden absolute w-[600px] h-full right-[-20px] top-1/2 -translate-y-1/2 z-[1] bg-gradient-to-r from-white from-[17.01%] to-white/0 to-[100%]"></div>
-                                    <img src="WhatsApp Image 2026-01-07 at 2.24.05 PM (1).jpeg" alt="Kathleen O Martinez" class="ml-auto h-full" width="470" height="382">
-                                </div>
-
-                                <!-- Content Overlay -->
-                                <div class="md:absolute min-h-[250px] inset-0 z-20 md:p-8 p-4 flex flex-col gap-5 md:justify-between">
-                                    <!-- Quote -->
-                                    <div>
-                                        <span class="text-primary-500 text-4xl mb-4 block">
-                                        <i class="ph-fill ph-quotes"></i>
-                                    </span>
-                                        <p class="text-base md:text-[18px] xl:text-2xl md:font-semibold max-w-lg md:max-w-[50%] xl:max-w-lg">
-                                            DataSpy Technologies is a practical, career-oriented tech training provider focused on Python and real-world projects, appreciated for hands-on learning and job readiness.                                        </p>
-                                    </div>
-
-                                    <!-- Author Info & Play Button -->
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h5 class="font-bold">CIVIS</h5>
-                                            <p class="text-base md:text-lg tracking-tight">Founder</p>
-                                        </div>
-                                    </div>
-                                </div>
+                    </a>
+                    <a href="/methodology/project-execution/" class="block group no-underline" aria-label="Project Execution">
+                        <div class="relative h-full 
+                            border border-solid border-gray-200 dark:border-gray-700
+                            bg-white dark:bg-gray-900
+                                hover:bg-primary-500 hover:border-primary-600
+                                dark:hover:bg-primary-500 dark:hover:border-primary-500
+                            p-5 transition-all duration-300 ease-in-out 
+                            md:col-span-1 cursor-pointer">
+                            <!-- Icon -->
+                            <div class="mb-5 flex  items-center overflow-hidden relative">
+                                <span class="tech-icon icon-ic-mobile-project text-5xl 
+                                        text-primary-500 dark:text-primary-400
+                                            group-hover:text-white
+                                        transition-colors duration-300 ease-in-out">
+                            </span>
                             </div>
+
+                            <!-- Title -->
+                            <h5 class="mb-5 font-extrabold dark:text-white
+                                group-hover:text-white
+                            transition-colors duration-300 ease-in-out">
+                                Project Execution
+                            </h5>
+
+                            <!-- Description -->
+                            <p class="leading-[1.5]
+                            dark:text-gray-300
+                                group-hover:text-white
+                            transition-colors duration-300 ease-in-out">
+                                Get to know how we balance the critical triangle of Cost, Time and Scope.
+                            </p>
                         </div>
-                        <div class="swiper-slide max-w-[360px] md:max-w-[1100px] mx-auto">
-                            <div class="bg-white overflow-hidden lg:mx-4 dark:bg-gray-800 rounded-2xl shadow-lg relative border-2 border-gray h-full">
-                                <!-- Image Container -->
-                                <div class="relative min-h-[240px] md:min-h-[380px] w-full">
-                                    <div class="sm:block hidden absolute w-[600px] h-full right-[-20px] top-1/2 -translate-y-1/2 z-[1] bg-gradient-to-r from-white from-[17.01%] to-white/0 to-[100%]"></div>
-                                    <img src="WhatsApp Image 2026-01-07 at 2.23.56 PM.jpeg" alt="James Currie" class="ml-auto h-full " width="470" height="382">
-                                </div>
-
-                                <!-- Content Overlay -->
-                                <div class="md:absolute min-h-[250px] inset-0 z-20 md:p-8 p-4 flex flex-col gap-5 md:justify-between">
-                                    <!-- Quote -->
-                                    <div>
-                                        <span class="text-primary-500 text-4xl mb-4 block">
-                                        <i class="ph-fill ph-quotes"></i>
-                                    </span>
-                                        <p class="text-base md:text-[18px] xl:text-2xl md:font-semibold max-w-lg md:max-w-[50%] xl:max-w-lg">
-                                            I liked their attention to the detail and communication skills.
-                                        </p>
-                                    </div>
-
-                                    <!-- Author Info & Play Button -->
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h5 class="font-bold">EATON</h5>
-                                            <p class="text-base md:text-lg tracking-tight">EXPERT & ANALYZER</p>
-                                        </div>
-
-                                    </div>
-                                </div>
+                    </a>
+                    <a href="/methodology/dedicated-teams/" class="block group no-underline" aria-label="Remote Team">
+                        <div class="relative h-full 
+                            border border-solid border-gray-200 dark:border-gray-700
+                            bg-white dark:bg-gray-900
+                                hover:bg-primary-500 hover:border-primary-600
+                                dark:hover:bg-primary-500 dark:hover:border-primary-500
+                            p-5 transition-all duration-300 ease-in-out 
+                            md:col-span-1 cursor-pointer">
+                            <!-- Icon -->
+                            <div class="mb-5 flex  items-center overflow-hidden relative">
+                                <span class="tech-icon icon-team text-5xl 
+                                        text-primary-500 dark:text-primary-400
+                                            group-hover:text-white
+                                        transition-colors duration-300 ease-in-out">
+                            </span>
                             </div>
+
+                            <!-- Title -->
+                            <h5 class="mb-5 font-extrabold dark:text-white
+                                group-hover:text-white
+                            transition-colors duration-300 ease-in-out">
+                                Remote Team
+                            </h5>
+
+                            <!-- Description -->
+                            <p class="leading-[1.5]
+                            dark:text-gray-300
+                                group-hover:text-white
+                            transition-colors duration-300 ease-in-out">
+                                From an expert team who works remotely, under your supervision.
+                            </p>
                         </div>
-                        <div class="swiper-slide max-w-[360px] md:max-w-[1100px] mx-auto">
-                            <div class="bg-white overflow-hidden lg:mx-4 dark:bg-gray-800 rounded-2xl shadow-lg relative border-2 border-gray h-full">
-                                <!-- Image Container -->
-                                <div class="relative min-h-[240px] md:min-h-[380px] w-full">
-                                    <div class="sm:block hidden absolute w-[600px] h-full right-[-20px] top-1/2 -translate-y-1/2 z-[1] bg-gradient-to-r from-white from-[17.01%] to-white/0 to-[100%]"></div>
-                                    <img src="WhatsApp Image 2026-01-07 at 2.24.04 PM (2).jpeg" alt="HCL TECH" class="ml-auto h-full " width="470" height="382">
-                                </div>
-
-                                <!-- Content Overlay -->
-                                <div class="md:absolute min-h-[250px] inset-0 z-20 md:p-8 p-4 flex flex-col gap-5 md:justify-between">
-                                    <!-- Quote -->
-                                    <div>
-                                        <span class="text-primary-500 text-4xl mb-4 block">
-                                        <i class="ph-fill ph-quotes"></i>
-                                    </span>
-                                        <p class="text-base md:text-[18px] xl:text-2xl md:font-semibold max-w-lg md:max-w-[50%] xl:max-w-lg">
-                                        DATASPY TECHNOLOGIES comes up with great ideas that we implemented, which helped my business and customers a great deal.
-                                        </p>
-                                    </div>
-                                    <!-- Author Info & Play Button -->
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            <h5 class="font-bold">HCL TECH</h5>
-                                            <p class="text-base md:text-lg tracking-tight">Founder, HCL tech</p>
-                                        </div>
-
-                                        
-                                    </div>
-                                </div>
+                    </a>
+                    <a href="/methodology/project-review/" class="block group no-underline" aria-label="Project Review">
+                        <div class="relative h-full 
+                            border border-solid border-gray-200 dark:border-gray-700
+                            bg-white dark:bg-gray-900
+                                hover:bg-primary-500 hover:border-primary-600
+                                dark:hover:bg-primary-500 dark:hover:border-primary-500
+                            p-5 transition-all duration-300 ease-in-out 
+                            md:col-span-1 cursor-pointer">
+                            <!-- Icon -->
+                            <div class="mb-5 flex  items-center overflow-hidden relative">
+                                <span class="tech-icon icon-ic-our-methodology-project-review text-5xl 
+                                        text-primary-500 dark:text-primary-400
+                                            group-hover:text-white
+                                        transition-colors duration-300 ease-in-out">
+                            </span>
                             </div>
+
+                            <!-- Title -->
+                            <h5 class="mb-5 font-extrabold dark:text-white
+                                group-hover:text-white
+                            transition-colors duration-300 ease-in-out">
+                                Project Review
+                            </h5>
+
+                            <!-- Description -->
+                            <p class="leading-[1.5]
+                            dark:text-gray-300
+                                group-hover:text-white
+                            transition-colors duration-300 ease-in-out">
+                                Get to know how we balance the critical triangle of Cost, Time and Scope.
+                            </p>
                         </div>
-                       <div style="text-align:center; margin-top:30px;">
-  <a href="more-reviews.html"
-     style="
-       display:inline-block;
-       padding:12px 28px;
-       font-size:16px;
-       font-weight:600;
-       color:#ffffff;
-       background-color:#c11616;
-       border-radius:6px;
-       text-decoration:none;
-       transition:all 0.3s ease;
-     "
-     onmouseover="this.style.backgroundColor='#f75757'"
-     onmouseout="this.style.backgroundColor='#c11616'"
-  >
-    View More Reviews
-  </a>
-</div>
+                    </a>
+                </div>
+
+            </div>
         </section>
 
         <!-- Pure content without wrapper when controls are hidden -->
-        <section class="section-space dark:bg-gray-900 pb-5">
+        <section class="section-space bg-gray-50 dark:bg-gray-900 max-w-[1248px] mx-auto">
             <div class="cmsContainer">
-                <div class="text-center">
-                    <span class="block mb-4 dark:text-gray-300 font-semibold block">Accolades</span>
-                    <h2 class="font-extrabold tracking-tight mb-4 dark:text-white">
-                        Feathers in our cap
-                    </h2>
-                </div>
-                <div class="mx-auto px-2.5 mt-[30px] lg:mt-[50px]">
-                    <div class="flex flex-wrap justify-center items-center gap-y-6 sm:gap-y-8 md:gap-y-12">
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 1.25.11 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Best Brand" loading="lazy">
+                <div class="flex flex-col justify-center">
+                    <div class="text-center mx-auto lg:max-w-4xl">
+                        <h2 class="mb-4 font-extrabold tracking-tight dark:text-white">
+                            Why It Matters — To You and To DataSpy                        </h2>
+                        <p class="leading-relaxed dark:text-gray-300 md:mt-10 mt-5">
+                           DataSpy might be a growing company, but our commitment is strong: every idea we work on deserves honesty, planning, and clear communication. Clients often wonder what steps come next — and we believe in answering those questions upfront.
+<br><br>This section is designed to give you complete clarity: what your idea needs, how we approach projects, and what information helps speed up the journey. We care about your vision just as much as you do, and we’re here to build it together.This guide helps you prepare, understand our workflow, and make the journey smoother. We value your idea, and we treat it with the same dedication we give our own work.
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center gap-3 mt-10">
+                        <a href="/services/mobile/react-native-app-development/" title="React Native" class="text-center transition-all duration-300 ease-in-out hover:opacity-90 border 
+                        border-gray-100 dark:border-gray-800">
+                            <div class="min-w-12 h-12 px-2 rounded-2 border flex items-center justify-center transition-all duration-300">
+                                <i class="tech-icon icon-ic-mobile-technology-react-native text-2xl block 
+                            text-black 
+                            hover:text-gray-500 dark:!text-primary-400"></i>
+                            </div>
+                        </a>
+
+                        <a href="/services/mobile/flutter-app-development-company/" title="Flutter" class="text-center transition-all duration-300 ease-in-out hover:opacity-90 border 
+                        border-gray-100 dark:border-gray-800">
+                            <div class="min-w-12 h-12 px-2 rounded-2 border flex items-center justify-center transition-all duration-300">
+                                <i class="tech-icon icon-ic-mobile-technology-flutter text-2xl block 
+                            text-black 
+                            hover:text-gray-500 dark:!text-primary-400"></i>
+                            </div>
+                        </a>
+
+                        <div title="Xamarin" class="text-center transition-all duration-300 ease-in-out hover:opacity-90 border 
+                            border-gray-100 dark:border-gray-800">
+                            <div class="min-w-12 h-12 px-2 rounded-2 border flex items-center justify-center transition-all duration-300">
+                                <i class="tech-icon icon-ic-mobile-technology-xamarin text-2xl block 
+                            text-black 
+                            hover:text-gray-500 dark:!text-primary-400"></i>
+                            </div>
                         </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 1.25.12 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Top B2B Companies Global 2018" loading="lazy">
+
+                        <div title="Titanium" class="text-center transition-all duration-300 ease-in-out hover:opacity-90 border 
+                            border-gray-100 dark:border-gray-800">
+                            <div class="min-w-12 h-12 px-2 rounded-2 border flex items-center justify-center transition-all duration-300">
+                                <i class="tech-icon icon-ic-mobile-technology-titanium text-2xl block 
+                            text-black 
+                            hover:text-gray-500 dark:!text-primary-400"></i>
+                            </div>
                         </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 1.25.13 PM (1).jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Clutch Global 2019" loading="lazy">
+
+                        <div title="Phone Gap" class="text-center transition-all duration-300 ease-in-out hover:opacity-90 border 
+                            border-gray-100 dark:border-gray-800">
+                            <div class="min-w-12 h-12 px-2 rounded-2 border flex items-center justify-center transition-all duration-300">
+                                <i class="tech-icon icon-ic-mobile-technology-phone-gap text-2xl block 
+                            text-black 
+                            hover:text-gray-500 dark:!text-primary-400"></i>
+                            </div>
                         </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.24.03 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Clutch Global 2020" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 1.25.14 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="D&amp;B Bradstreet" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.23.55 PM (1).jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Amazone Web Services" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.23.55 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Shopify Plus" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.23.56 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Nasscom" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.24.04 PM (2).jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Magento Bronze" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.24.02 PM (1).jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Gesia" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.24.03 PM (1).jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="ISO Certified" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.24.06 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="GoodFirms" loading="lazy">
-                        </div>
-                        <div class="w-1/3 md:w-auto transition-transform duration-300 px-2 sm:px-4 lg:px-6">
-                            <img src="WhatsApp Image 2026-01-07 at 2.24.02 PM.jpeg" class="max-w-[80%] lg:max-w-[151px] mx-auto filter dark:invert" alt="Clutch Review" loading="lazy">
-                        </div>
+
+                    </div>
+
+                    <div class="mt-10 xl:mt-16 overflow-hidden mx-6 md:mx-12">
+                        <img class="mx-auto" src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2022/02/mobile-app-development-cross-platform-img.webp" alt="Custom software development solutions for enterprises, b2b, b2c businesses">
                     </div>
                 </div>
             </div>
         </section>
-<div style="
+
+        <!-- Pure content without wrapper when controls are hidden -->
+        <section class="dark:bg-gray-900 section-space">
+            <div class="cmsContainer">
+                <!-- Heading -->
+                <div class="text-center">
+                    <h2 class="font-extrabold tracking-tight dark:text-white text-center mb-6">
+                        WE HELP YOU
+                    </h2>
+                </div>
+
+
+                <!-- Grid Container -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-6 md:mt-12">
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+
+                        <!-- Icon (class-based or image-based) -->
+                        <div class="inline-flex items-center justify-center mb-6">
+                            <!-- Render icon from image -->
+                            <img src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2022/02/ic-mobile-app-development-enterprise.svg" alt="Enterprise" class="w-12 h-12 object-contain">
+                        </div>
+
+                        <!-- Title -->
+                        <h5 class="font-bold dark:text-white mb-4">
+                            Enterprise
+                        </h5>
+
+                        <!-- Description -->
+                        <p class="dark:text-gray-300">
+                            DataSpy helps enterprises strengthen their digital ecosystem by integrating AI-powered tools, automation, and data intelligence into their daily operations. Along with tailored software solutions, we provide corporate training that builds AI and tech capabilities within teams—ensuring organizations stay efficient, future-ready, and competitive.                        </p>
+
+                    </div>
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+
+                        <!-- Icon (class-based or image-based) -->
+                        <div class="inline-flex items-center justify-center mb-6">
+                            <!-- Render icon from image -->
+                            <img src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2022/02/ic-business.svg" alt="Business" class="w-12 h-12 object-contain">
+                        </div>
+
+                        <!-- Title -->
+                        <h5 class="font-bold dark:text-white mb-4">
+                            Business
+                        </h5>
+
+                        <!-- Description -->
+                        <p class="dark:text-gray-300">
+                            We support growing businesses by understanding their workflows and mapping their requirements to AI-enhanced solutions. Whether it’s optimizing processes, improving decision-making with data, or training teams on AI technologies, DataSpy ensures businesses can adapt quickly and operate with greater clarity and productivity                        </p>
+
+                    </div>
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+
+                        <!-- Icon (class-based or image-based) -->
+                        <div class="inline-flex items-center justify-center mb-6">
+                            <!-- Render icon from image -->
+                            <img src="https://indianic-uploads.sfo3.digitaloceanspaces.com/uploads/2022/02/ic-consumers.svg" alt="Consumers" class="w-12 h-12 object-contain">
+                        </div>
+
+                        <!-- Title -->
+                        <h5 class="font-bold dark:text-white mb-4">
+                            Consumers
+                        </h5>
+
+                        <!-- Description -->
+                        <p class="dark:text-gray-300">
+                           DataSpy equips students, professionals, and career-switchers with hands-on training in Python, AI fundamentals, automation, and modern development skills. Our approach focuses on real projects and practical applications, allowing learners to confidently use AI tools and technology in their daily work or future career paths.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div style="
   background-color:#fdecec;
   padding:40px 20px;
   border-top:1px solid #ac1a1a;
@@ -3624,7 +3281,7 @@ DataSpy Technologies is a growing corporate training provider focused on practic
     <!-- Brand & Contact -->
     <div style="flex:1; min-width:260px;">
       <a href="/" aria-label="Dataspy">
-        <img src="LOGO.webp" alt="Dataspy Logo" width="120" style="margin-bottom:16px;">
+        <img src="Logo.png" alt="Dataspy Logo" width="120" style="margin-bottom:16px;">
       </a>
 
       <p style="font-size:14px; color:#6b7280; margin-bottom:6px;">
@@ -3779,7 +3436,6 @@ DataSpy Technologies is a growing corporate training provider focused on practic
   </div>
 
 </footer>
-
 
     <!-- Edit Drawer removed - now handled by EditDrawerComponent -->
 
@@ -4195,16 +3851,7 @@ DataSpy Technologies is a growing corporate training provider focused on practic
                     });
                 });
                 //============= End of Email Modal Functionality
-                
-                //============= Start of Helper function to store theme preference
-                function setToken(key, value) {
-                    try {
-                        localStorage.setItem(key, value);
-                    } catch (e) {
-                        console.warn('Failed to set token:', e);
-                    }
-                }
-                //============= End of Helper function to store theme preference
+
 
                 //============= Start of Set light theme
                 function setThemeWhite() {
